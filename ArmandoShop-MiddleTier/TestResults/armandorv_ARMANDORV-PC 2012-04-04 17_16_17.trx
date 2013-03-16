@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="61e1a063-e20c-46a3-b226-5acdf5161ae1" name="armandorv@ARMANDORV-PC 2012-04-04 17:16:17" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-04-04 17_16_17">
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Debug\ArmandoShop.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-04T17:16:17.1974317+02:00" queuing="2012-04-04T17:16:17.3174319+02:00" start="2012-04-04T17:16:17.3374319+02:00" finish="2012-04-04T17:16:17.7774325+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateLotTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="18a60b84-f6b4-4d90-c960-b4edc74c0ab8">
+      <Execution id="5184fe2b-545a-474e-82e8-2dd30554beb9" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CategoryDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateLotTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="18a60b84-f6b4-4d90-c960-b4edc74c0ab8" executionId="5184fe2b-545a-474e-82e8-2dd30554beb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5184fe2b-545a-474e-82e8-2dd30554beb9" testId="18a60b84-f6b4-4d90-c960-b4edc74c0ab8" testName="CreateLotTest" computerName="ARMANDORV-PC" duration="00:00:00.2324144" startTime="2012-04-04T17:16:17.3474319+02:00" endTime="2012-04-04T17:16:17.7674325+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5184fe2b-545a-474e-82e8-2dd30554beb9">
+      <Output>
+        <StdOut>Current categorys  : 
+
+category [ID=1,Name =name601051 ,Description =name601051]
+category [ID=2,Name =name959856 ,Description =name959856]
+category [ID=3,Name =name959856 ,Description =name796235]
+category [ID=4,Name =name155040 ,Description =name155040]
+category [ID=5,Name =name155040 ,Description =name155040]
+category [ID=6,Name =name513845 ,Description =name513845]
+category [ID=7,Name =name350225 ,Description =name350225]
+category [ID=8,Name =name350225 ,Description =name350225]
+category [ID=9,Name =name350225 ,Description =name350225]
+category [ID=10,Name =name709030 ,Description =name709030]
+category [ID=11,Name =name545410 ,Description =name545410]
+category [ID=12,Name =name545410 ,Description =name545410]
+category [ID=13,Name =name904215 ,Description =name904215]
+category [ID=14,Name =name263020 ,Description =name263020]
+category [ID=15,Name =name263020 ,Description =name263020]
+category [ID=16,Name =name99400 ,Description =name99400]
+category [ID=17,Name =name99400 ,Description =name99400]
+category [ID=18,Name =name458205 ,Description =name458205]
+category [ID=19,Name =name294584 ,Description =name294584]
+category [ID=20,Name =name294584 ,Description =name294584]
+category [ID=21,Name =name421390 ,Description =name421390]
+category [ID=22,Name =name616575 ,Description =name616575]
+category [ID=23,Name =name616575 ,Description =name616575]
+category [ID=24,Name =name616575 ,Description =name616575]
+category [ID=25,Name =name452955 ,Description =name452955]
+category [ID=26,Name =name811760 ,Description =name811760]
+category [ID=27,Name =name811760 ,Description =name811760]
+category [ID=28,Name =name170565 ,Description =name170565]
+category [ID=29,Name =name170565 ,Description =name170565]
+category [ID=30,Name =name6944 ,Description =name6944]
+category [ID=31,Name =name365749 ,Description =name365749]
+category [ID=32,Name =name365749 ,Description =name365749]
+category [ID=33,Name =name202129 ,Description =name202129]
+category [ID=34,Name =name560934 ,Description =name560934]
+category [ID=35,Name =name560934 ,Description =name560934]
+category [ID=36,Name =name919739 ,Description =name919739]
+category [ID=37,Name =name756119 ,Description =name756119]
+category [ID=38,Name =name756119 ,Description =name756119]
+category [ID=39,Name =name114924 ,Description =name114924]
+category [ID=40,Name =name114924 ,Description =name114924]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

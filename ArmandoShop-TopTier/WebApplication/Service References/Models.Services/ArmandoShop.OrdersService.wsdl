@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ArmandoShop.OrdersService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ArmandoShop.OrdersService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ArmandoShop.OrdersService/Imports">
+      <xsd:import namespace="http://ArmandoShop.OrdersService" />
+      <xsd:import namespace="http://ArmandoShop.ProductsService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ArmandoShop.Model" />
+      <xsd:import namespace="http://ArmandoShop.CustomersService" />
+      <xsd:import namespace="http://ArmandoShop.ProvidersService" />
+      <xsd:import namespace="http://ArmandoShop.categoryService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrdersService_ListOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListOrders" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_ListOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_GetProductsByOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsByOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_GetProductsByOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsByOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_NewOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_NewOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_ModifyOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_ModifyOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_DeleteOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrder" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersService_DeleteOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOrderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrdersService">
+    <wsdl:operation name="ListOrders">
+      <wsdl:input wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/ListOrders" message="tns:IOrdersService_ListOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/ListOrdersResponse" message="tns:IOrdersService_ListOrders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByOrder">
+      <wsdl:input wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/GetProductsByOrder" message="tns:IOrdersService_GetProductsByOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/GetProductsByOrderResponse" message="tns:IOrdersService_GetProductsByOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <wsdl:input wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/GetOrder" message="tns:IOrdersService_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/GetOrderResponse" message="tns:IOrdersService_GetOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewOrder">
+      <wsdl:input wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/NewOrder" message="tns:IOrdersService_NewOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/NewOrderResponse" message="tns:IOrdersService_NewOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyOrder">
+      <wsdl:input wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/ModifyOrder" message="tns:IOrdersService_ModifyOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/ModifyOrderResponse" message="tns:IOrdersService_ModifyOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrder">
+      <wsdl:input wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/DeleteOrder" message="tns:IOrdersService_DeleteOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.OrdersService/IOrdersService/DeleteOrderResponse" message="tns:IOrdersService_DeleteOrder_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

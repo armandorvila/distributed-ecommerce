@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="eb3ed1b1-b5c2-4db3-9271-442a72734833" name="armandorv@ARMANDORV-PC 2012-03-29 16:06:51" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-03-29 16_06_51">
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Debug\ArmandoShop.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-29T16:06:51.2430421+02:00" queuing="2012-03-29T16:06:51.2898421+02:00" start="2012-03-29T16:06:51.3210422+02:00" finish="2012-03-29T16:06:52.1158461+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="23" executed="23" passed="16" error="0" failed="7" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="ac6ae157-476b-c5a9-30ff-968b97ebd371">
+      <Execution id="6ed5ddcd-70ce-43df-b19a-04d1fd5bc919" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="GetProductsByElementTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="e7346735-74e2-609a-e8b4-d515e59496ef">
+      <Execution id="5b5054dc-5ff1-4dc2-beb0-4a6087da7265" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetProductsByElementTest" />
+    </UnitTest>
+    <UnitTest name="TestFindById" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="70181647-20c2-eead-a83d-071571dd77b1">
+      <Execution id="a100e989-903f-41cf-91ee-c14f0d7aa88c" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindById" />
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="0b284713-3661-e80e-95ea-f640b439883e">
+      <Execution id="445d8ee1-1f97-4902-875c-1b29b5636203" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+    <UnitTest name="FindByIdTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="37451224-fd20-f8f6-2f13-405e5dec14ac">
+      <Execution id="f380deb3-f644-46ec-988b-aae0d6cd8292" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindByIdTest" />
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a0e5cdf1-c7c2-caac-d080-ee895872f784">
+      <Execution id="21619d0a-76f4-4ffc-a438-8af849e2aa15" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+    </UnitTest>
+    <UnitTest name="TestFindById" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="830426b4-c201-38e1-83ba-16bc80acfe59">
+      <Execution id="bb2dc30c-ba78-40a3-bea0-23d983c555e8" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProductDaoTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindById" />
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="b959f45d-9227-8acc-24b4-6ba23aed2dad">
+      <Execution id="24906d91-1743-4ad6-8ceb-b3c710d0094e" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="ed63af31-f63f-29ce-afd8-efeefcefa207">
+      <Execution id="1de95def-2b44-4b24-92d8-003d5ec40584" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="TestFindAllProducts" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="8425f456-b21f-95a8-1d75-d22c5402c660">
+      <Execution id="f2c7a6d2-d238-4038-a23d-db7e5a31e329" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProductDaoTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindAllProducts" />
+    </UnitTest>
+    <UnitTest name="TestFindAllorders" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="f94213ab-5baa-6c6a-4566-c2d2c70c216a">
+      <Execution id="c83977a0-87d2-4c12-83c2-791e1313f875" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindAllorders" />
+    </UnitTest>
+    <UnitTest name="FindAllTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="45fb7b17-50c5-f059-47d8-29fc42af25fa">
+      <Execution id="401f3f28-ecc6-4227-87d2-723b4d96cdfd" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindAllTest" />
+    </UnitTest>
+    <UnitTest name="CreateLotTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="50c35ff5-366b-ef89-1272-0902cbe132f0">
+      <Execution id="e89119ed-c768-47cd-90bf-da83ba102c54" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CategorityDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateLotTest" />
+    </UnitTest>
+    <UnitTest name="GetCategoritiesByElementTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="b0434fe2-cd46-678b-72da-886d4716fad9">
+      <Execution id="e30c9ef4-a5f1-4e7a-a8e7-56e6719fe30b" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCategoritiesByElementTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="e1cfc958-9e4e-d075-76e3-eea474bbc734">
+      <Execution id="3b6a3330-672a-4f57-9030-2ad6f68c75a5" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProductDaoTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="681b1f88-4b97-5aa9-e27e-6b8658942e5c">
+      <Execution id="891573fc-062a-4b8f-9758-b4cde61f6d77" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProductDaoTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a041aa35-bc85-233b-5e08-1197604f2778">
+      <Execution id="15eeb647-63f8-4123-a3a0-7d72abc01675" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="76580e2d-3bf6-f984-de97-71f2764bd17d">
+      <Execution id="a734a158-33c3-462a-b58d-01aa117a09f1" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProductDaoTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="2e9dc7d2-e059-ef16-f604-17042dfaea10">
+      <Execution id="9ce8f8f5-8bef-4284-ad2b-9840551403f9" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="TestFindById" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a3ad16db-a1cc-b4e3-3232-4990e1ba5f28">
+      <Execution id="2df41641-1937-4963-9e76-531f1b3945dd" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindById" />
+    </UnitTest>
+    <UnitTest name="RemoveTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a416dbbb-8ce7-bc71-5995-b35eb4d39004">
+      <Execution id="c9f8a54c-f4ec-46d4-8f7f-1d4861b6cea4" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveTest" />
+    </UnitTest>
+    <UnitTest name="TestFindAllproviders" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="fc90bb23-52db-513a-b706-b7916bd78bdc">
+      <Execution id="0b010fa2-1c8a-4cad-96fe-650f7aaaf2b5" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindAllproviders" />
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="3125de1b-d30a-bcfe-c8bd-930b8be98f38">
+      <Execution id="3bf7683e-912b-463c-88c4-7c223b090f6a" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b284713-3661-e80e-95ea-f640b439883e" executionId="445d8ee1-1f97-4902-875c-1b29b5636203" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e9dc7d2-e059-ef16-f604-17042dfaea10" executionId="9ce8f8f5-8bef-4284-ad2b-9840551403f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3125de1b-d30a-bcfe-c8bd-930b8be98f38" executionId="3bf7683e-912b-463c-88c4-7c223b090f6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37451224-fd20-f8f6-2f13-405e5dec14ac" executionId="f380deb3-f644-46ec-988b-aae0d6cd8292" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45fb7b17-50c5-f059-47d8-29fc42af25fa" executionId="401f3f28-ecc6-4227-87d2-723b4d96cdfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50c35ff5-366b-ef89-1272-0902cbe132f0" executionId="e89119ed-c768-47cd-90bf-da83ba102c54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="681b1f88-4b97-5aa9-e27e-6b8658942e5c" executionId="891573fc-062a-4b8f-9758-b4cde61f6d77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70181647-20c2-eead-a83d-071571dd77b1" executionId="a100e989-903f-41cf-91ee-c14f0d7aa88c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76580e2d-3bf6-f984-de97-71f2764bd17d" executionId="a734a158-33c3-462a-b58d-01aa117a09f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="830426b4-c201-38e1-83ba-16bc80acfe59" executionId="bb2dc30c-ba78-40a3-bea0-23d983c555e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8425f456-b21f-95a8-1d75-d22c5402c660" executionId="f2c7a6d2-d238-4038-a23d-db7e5a31e329" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a041aa35-bc85-233b-5e08-1197604f2778" executionId="15eeb647-63f8-4123-a3a0-7d72abc01675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0e5cdf1-c7c2-caac-d080-ee895872f784" executionId="21619d0a-76f4-4ffc-a438-8af849e2aa15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3ad16db-a1cc-b4e3-3232-4990e1ba5f28" executionId="2df41641-1937-4963-9e76-531f1b3945dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a416dbbb-8ce7-bc71-5995-b35eb4d39004" executionId="c9f8a54c-f4ec-46d4-8f7f-1d4861b6cea4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac6ae157-476b-c5a9-30ff-968b97ebd371" executionId="6ed5ddcd-70ce-43df-b19a-04d1fd5bc919" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0434fe2-cd46-678b-72da-886d4716fad9" executionId="e30c9ef4-a5f1-4e7a-a8e7-56e6719fe30b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b959f45d-9227-8acc-24b4-6ba23aed2dad" executionId="24906d91-1743-4ad6-8ceb-b3c710d0094e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1cfc958-9e4e-d075-76e3-eea474bbc734" executionId="3b6a3330-672a-4f57-9030-2ad6f68c75a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7346735-74e2-609a-e8b4-d515e59496ef" executionId="5b5054dc-5ff1-4dc2-beb0-4a6087da7265" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed63af31-f63f-29ce-afd8-efeefcefa207" executionId="1de95def-2b44-4b24-92d8-003d5ec40584" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f94213ab-5baa-6c6a-4566-c2d2c70c216a" executionId="c83977a0-87d2-4c12-83c2-791e1313f875" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc90bb23-52db-513a-b706-b7916bd78bdc" executionId="0b010fa2-1c8a-4cad-96fe-650f7aaaf2b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="445d8ee1-1f97-4902-875c-1b29b5636203" testId="0b284713-3661-e80e-95ea-f640b439883e" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.0570671" startTime="2012-03-29T16:06:51.3210422+02:00" endTime="2012-03-29T16:06:51.5706426+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="445d8ee1-1f97-4902-875c-1b29b5636203">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.CreateTest produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.OrderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\OrderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.CreateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 44
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9ce8f8f5-8bef-4284-ad2b-9840551403f9" testId="2e9dc7d2-e059-ef16-f604-17042dfaea10" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0252690" startTime="2012-03-29T16:06:51.5706426+02:00" endTime="2012-03-29T16:06:51.6018427+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ce8f8f5-8bef-4284-ad2b-9840551403f9">
+      <Output>
+        <StdOut>Before :Product [Id=1 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+After :Product [Id=1 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon]</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3bf7683e-912b-463c-88c4-7c223b090f6a" testId="3125de1b-d30a-bcfe-c8bd-930b8be98f38" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.0255090" startTime="2012-03-29T16:06:51.6018427+02:00" endTime="2012-03-29T16:06:51.6330427+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bf7683e-912b-463c-88c4-7c223b090f6a">
+      <Output>
+        <StdOut>Testing Create Provider : 
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+Creating Provider  :name32202
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+Provider [ Id = 2 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f380deb3-f644-46ec-988b-aae0d6cd8292" testId="37451224-fd20-f8f6-2f13-405e5dec14ac" testName="FindByIdTest" computerName="ARMANDORV-PC" duration="00:00:00.0044720" startTime="2012-03-29T16:06:51.6330427+02:00" endTime="2012-03-29T16:06:51.6486428+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f380deb3-f644-46ec-988b-aae0d6cd8292">
+      <Output>
+        <StdOut>Customer:Product [Id=1 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon]</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="401f3f28-ecc6-4227-87d2-723b4d96cdfd" testId="45fb7b17-50c5-f059-47d8-29fc42af25fa" testName="FindAllTest" computerName="ARMANDORV-PC" duration="00:00:00.0051783" startTime="2012-03-29T16:06:51.6486428+02:00" endTime="2012-03-29T16:06:51.6486428+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="401f3f28-ecc6-4227-87d2-723b4d96cdfd">
+      <Output>
+        <StdOut>Al customers are:
+
+Product [Id=1 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=14 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=15 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=16 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=17 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=18 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=19 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=20 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=22 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=27 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=28 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=29 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=30 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon] 
+
+Product [Id=31 ,Name=Lucatoni ,surname=Lucoanon ,Address=La polla street ,Phone =penpon]</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e89119ed-c768-47cd-90bf-da83ba102c54" testId="50c35ff5-366b-ef89-1272-0902cbe132f0" testName="CreateLotTest" computerName="ARMANDORV-PC" duration="00:00:00.1646786" startTime="2012-03-29T16:06:51.6486428+02:00" endTime="2012-03-29T16:06:51.8202431+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e89119ed-c768-47cd-90bf-da83ba102c54">
+      <Output>
+        <StdOut>Current Categoritys  : 
+
+Categority [ID=1,Name =1 ,Description =1]
+Categority [ID=2,Name =Mobiles ,Description =Several Moviles]
+Categority [ID=3,Name =Laptops ,Description =Several Laptops]
+Categority [ID=4,Name =name353627 ,Description =name353627]
+Categority [ID=5,Name =name353627 ,Description =name353627]
+Categority [ID=6,Name =name190007 ,Description =name190007]
+Categority [ID=7,Name =name190007 ,Description =name190007]
+Categority [ID=8,Name =name548812 ,Description =name548812]
+Categority [ID=9,Name =name548812 ,Description =name548812]
+Categority [ID=10,Name =name385192 ,Description =name385192]
+Categority [ID=11,Name =name385192 ,Description =name385192]
+Categority [ID=12,Name =name743997 ,Description =name743997]
+Categority [ID=13,Name =name743997 ,Description =name743997]
+Categority [ID=14,Name =name102802 ,Description =name102802]
+Categority [ID=15,Name =name102802 ,Description =name102802]
+Categority [ID=16,Name =name939181 ,Description =name939181]
+Categority [ID=17,Name =name939181 ,Description =name939181]
+Categority [ID=18,Name =name297986 ,Description =name297986]
+Categority [ID=19,Name =name297986 ,Description =name297986]
+Categority [ID=20,Name =name134366 ,Description =name134366]
+Categority [ID=21,Name =name134366 ,Description =name134366]
+Categority [ID=22,Name =name493171 ,Description =name493171]
+Categority [ID=23,Name =name493171 ,Description =name493171]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="891573fc-062a-4b8f-9758-b4cde61f6d77" testId="681b1f88-4b97-5aa9-e27e-6b8658942e5c" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.0246693" startTime="2012-03-29T16:06:51.8202431+02:00" endTime="2012-03-29T16:06:51.8514431+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="891573fc-062a-4b8f-9758-b4cde61f6d77">
+      <Output>
+        <StdOut>Testing Create Product : 
+
+Current Products  : 
+
+Product [Id=22 ,Name=name837017 ,Price=12 ,Stock=2 ,Description ="sadawd" ,Categority = Categority [ID=1,Name =1 ,Description =1]] 
+
+Creating Product  :name837017
+
+Current Products  : 
+
+Product [Id=22 ,Name=name837017 ,Price=12 ,Stock=2 ,Description ="sadawd" ,Categority = Categority [ID=1,Name =1 ,Description =1]] 
+
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a100e989-903f-41cf-91ee-c14f0d7aa88c" testId="70181647-20c2-eead-a83d-071571dd77b1" testName="TestFindById" computerName="ARMANDORV-PC" duration="00:00:00.0044559" startTime="2012-03-29T16:06:51.8514431+02:00" endTime="2012-03-29T16:06:51.8670432+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a100e989-903f-41cf-91ee-c14f0d7aa88c">
+      <Output>
+        <StdOut>Testing Getting Provider By Id: 1
+
+Provider [ Id = 1 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a734a158-33c3-462a-b58d-01aa117a09f1" testId="76580e2d-3bf6-f984-de97-71f2764bd17d" testName="DeleteTest" computerName="ARMANDORV-PC" duration="00:00:00.0167622" startTime="2012-03-29T16:06:51.8670432+02:00" endTime="2012-03-29T16:06:51.8826432+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a734a158-33c3-462a-b58d-01aa117a09f1">
+      <Output>
+        <StdOut>Testing Delete Product : 
+
+Current Products  : 
+
+Product [Id=22 ,Name=name837017 ,Price=12 ,Stock=2 ,Description ="sadawd" ,Categority = Categority [ID=1,Name =1 ,Description =1]] 
+
+Deleting Last Productn
+Current Products  : 
+
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bb2dc30c-ba78-40a3-bea0-23d983c555e8" testId="830426b4-c201-38e1-83ba-16bc80acfe59" testName="TestFindById" computerName="ARMANDORV-PC" duration="00:00:00.0061971" startTime="2012-03-29T16:06:51.8826432+02:00" endTime="2012-03-29T16:06:51.8982432+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb2dc30c-ba78-40a3-bea0-23d983c555e8">
+      <Output>
+        <StdOut>Testing Getting Product By Id: 1</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.ProductDaoTest.TestFindById produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.ProductDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\ProductDAO.cs:línea 22
+   en ArmandoShop.DataAccess.Tests.ProductDaoTest.TestFindById() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\ProductDaoTest.cs:línea 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2c7a6d2-d238-4038-a23d-db7e5a31e329" testId="8425f456-b21f-95a8-1d75-d22c5402c660" testName="TestFindAllProducts" computerName="ARMANDORV-PC" duration="00:00:00.0061328" startTime="2012-03-29T16:06:51.8982432+02:00" endTime="2012-03-29T16:06:51.9138432+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2c7a6d2-d238-4038-a23d-db7e5a31e329">
+      <Output>
+        <StdOut>Testing Getting All Products: 
+
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="15eeb647-63f8-4123-a3a0-7d72abc01675" testId="a041aa35-bc85-233b-5e08-1197604f2778" testName="DeleteTest" computerName="ARMANDORV-PC" duration="00:00:00.0092836" startTime="2012-03-29T16:06:51.9138432+02:00" endTime="2012-03-29T16:06:51.9294433+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15eeb647-63f8-4123-a3a0-7d72abc01675">
+      <Output>
+        <StdOut>Testing Delete order : 
+
+Current orders  : 
+
+Deleting Last ordern</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.DeleteTest produjo la excepción: 
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index</Message>
+          <StackTrace>    en System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.DeleteTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="21619d0a-76f4-4ffc-a438-8af849e2aa15" testId="a0e5cdf1-c7c2-caac-d080-ee895872f784" testName="DeleteTest" computerName="ARMANDORV-PC" duration="00:00:00.0170309" startTime="2012-03-29T16:06:51.9294433+02:00" endTime="2012-03-29T16:06:51.9450433+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21619d0a-76f4-4ffc-a438-8af849e2aa15">
+      <Output>
+        <StdOut>Testing Delete Provider : 
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+Provider [ Id = 2 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+Deleting Last Providern
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2df41641-1937-4963-9e76-531f1b3945dd" testId="a3ad16db-a1cc-b4e3-3232-4990e1ba5f28" testName="TestFindById" computerName="ARMANDORV-PC" duration="00:00:00.0060967" startTime="2012-03-29T16:06:51.9606433+02:00" endTime="2012-03-29T16:06:51.9606433+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2df41641-1937-4963-9e76-531f1b3945dd">
+      <Output>
+        <StdOut>Testing Getting order By Id: 1</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.TestFindById produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.OrderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\OrderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.TestFindById() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c9f8a54c-f4ec-46d4-8f7f-1d4861b6cea4" testId="a416dbbb-8ce7-bc71-5995-b35eb4d39004" testName="RemoveTest" computerName="ARMANDORV-PC" duration="00:00:00.0089654" startTime="2012-03-29T16:06:51.9606433+02:00" endTime="2012-03-29T16:06:51.9762433+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9f8a54c-f4ec-46d4-8f7f-1d4861b6cea4">
+      <Output>
+        <StdOut>Al customers are:
+
+System.Collections.Generic.List`1[ArmandoShop.Model.Customer]</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6ed5ddcd-70ce-43df-b19a-04d1fd5bc919" testId="ac6ae157-476b-c5a9-30ff-968b97ebd371" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0069980" startTime="2012-03-29T16:06:51.9762433+02:00" endTime="2012-03-29T16:06:51.9918434+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ed5ddcd-70ce-43df-b19a-04d1fd5bc919">
+      <Output>
+        <StdOut>Testing Update order : 
+
+Current orders  : 
+
+Updating Last order</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.UpdateTest produjo la excepción: 
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index</Message>
+          <StackTrace>    en System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.UpdateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e30c9ef4-a5f1-4e7a-a8e7-56e6719fe30b" testId="b0434fe2-cd46-678b-72da-886d4716fad9" testName="GetCategoritiesByElementTest" computerName="ARMANDORV-PC" duration="00:00:00.0097517" startTime="2012-03-29T16:06:51.9918434+02:00" endTime="2012-03-29T16:06:52.0074434+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e30c9ef4-a5f1-4e7a-a8e7-56e6719fe30b">
+      <Output>
+        <StdOut>Testing GetCategoritiesByElementTest : 
+
+Categority [ID=1,Name =1 ,Description =1]
+Categority [ID=2,Name =Mobiles ,Description =Several Moviles]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="24906d91-1743-4ad6-8ceb-b3c710d0094e" testId="b959f45d-9227-8acc-24b4-6ba23aed2dad" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.0085964" startTime="2012-03-29T16:06:52.0074434+02:00" endTime="2012-03-29T16:06:52.0230434+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24906d91-1743-4ad6-8ceb-b3c710d0094e">
+      <Output>
+        <StdOut>New Id :32</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3b6a3330-672a-4f57-9030-2ad6f68c75a5" testId="e1cfc958-9e4e-d075-76e3-eea474bbc734" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0078762" startTime="2012-03-29T16:06:52.0230434+02:00" endTime="2012-03-29T16:06:52.0386435+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b6a3330-672a-4f57-9030-2ad6f68c75a5">
+      <Output>
+        <StdOut>Testing Update Product : 
+
+Current Products  : 
+
+Updating Last Product</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.ProductDaoTest.UpdateTest produjo la excepción: 
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index</Message>
+          <StackTrace>    en System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en ArmandoShop.DataAccess.Tests.ProductDaoTest.UpdateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\ProductDaoTest.cs:línea 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5b5054dc-5ff1-4dc2-beb0-4a6087da7265" testId="e7346735-74e2-609a-e8b4-d515e59496ef" testName="GetProductsByElementTest" computerName="ARMANDORV-PC" duration="00:00:00.0072658" startTime="2012-03-29T16:06:52.0386435+02:00" endTime="2012-03-29T16:06:52.0542435+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b5054dc-5ff1-4dc2-beb0-4a6087da7265">
+      <Output>
+        <StdOut>GetProductsByElementTest :</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.GetProductsByElementTest produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.OrderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\OrderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.GetProductsByElementTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1de95def-2b44-4b24-92d8-003d5ec40584" testId="ed63af31-f63f-29ce-afd8-efeefcefa207" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0167105" startTime="2012-03-29T16:06:52.0542435+02:00" endTime="2012-03-29T16:06:52.0778440+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1de95def-2b44-4b24-92d8-003d5ec40584">
+      <Output>
+        <StdOut>Testing Update Provider : 
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name32202 ,Mail = armando@armandorv.coasdasdasdm]
+Updating Last Provider
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name99500 ,Mail = armando@armandorv.coasdasdasdm]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c83977a0-87d2-4c12-83c2-791e1313f875" testId="f94213ab-5baa-6c6a-4566-c2d2c70c216a" testName="TestFindAllorders" computerName="ARMANDORV-PC" duration="00:00:00.0058419" startTime="2012-03-29T16:06:52.0798441+02:00" endTime="2012-03-29T16:06:52.0908447+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c83977a0-87d2-4c12-83c2-791e1313f875">
+      <Output>
+        <StdOut>Testing Getting All orders: 
+
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0b010fa2-1c8a-4cad-96fe-650f7aaaf2b5" testId="fc90bb23-52db-513a-b706-b7916bd78bdc" testName="TestFindAllproviders" computerName="ARMANDORV-PC" duration="00:00:00.0051957" startTime="2012-03-29T16:06:52.0918448+02:00" endTime="2012-03-29T16:06:52.1018453+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b010fa2-1c8a-4cad-96fe-650f7aaaf2b5">
+      <Output>
+        <StdOut>Testing Getting All providers: 
+
+Provider [ Id = 1 ,Name = name99500 ,Mail = armando@armandorv.coasdasdasdm]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:i3="http://ArmandoShop.OrdersService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:i4="http://ArmandoShop.ContractsService" xmlns:i0="http://ArmandoShop.ProductsService" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:i5="http://ArmandoShop.UsersService" xmlns:i1="http://ArmandoShop.ProvidersService" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:i6="http://ArmandoShop.CustomersService" xmlns:i2="http://ArmandoShop.categoryService" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HttpArmandoShopService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://ArmandoShop.ProductsService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl0" />
+  <wsdl:import namespace="http://ArmandoShop.ProvidersService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl1" />
+  <wsdl:import namespace="http://ArmandoShop.categoryService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl2" />
+  <wsdl:import namespace="http://ArmandoShop.OrdersService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl3" />
+  <wsdl:import namespace="http://ArmandoShop.ContractsService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl4" />
+  <wsdl:import namespace="http://ArmandoShop.UsersService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl5" />
+  <wsdl:import namespace="http://ArmandoShop.CustomersService" location="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl6" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IProductsService" type="i0:IProductsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://ArmandoShop.ProductsService/IProductsService/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProducts">
+      <soap:operation soapAction="http://ArmandoShop.ProductsService/IProductsService/ListProducts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByCategory">
+      <soap:operation soapAction="http://ArmandoShop.ProductsService/IProductsService/GetProductsByCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewProduct">
+      <soap:operation soapAction="http://ArmandoShop.ProductsService/IProductsService/NewProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProduct">
+      <soap:operation soapAction="http://ArmandoShop.ProductsService/IProductsService/ModifyProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProduct">
+      <soap:operation soapAction="http://ArmandoShop.ProductsService/IProductsService/DeleteProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IProvidersService" type="i1:IProvidersService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProvider">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/GetProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProviderByUser">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/GetProviderByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProviders">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/ListProviders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProvidersByCategory">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/GetProvidersByCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewProvider">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/NewProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProvider">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/ModifyProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvider">
+      <soap:operation soapAction="http://ArmandoShop.ProvidersService/IProvidersService/DeleteProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ICategoryService" type="i2:ICategoryService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListCategories">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/ListCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoriesByProvider">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/GetCategoriesByProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoriesNotInProvider">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/GetCategoriesNotInProvider" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddProviderToCategory">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/AddProviderToCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveProviderOfCategory">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/RemoveProviderOfCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategory">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/GetCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewCategory">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/NewCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/DeleteCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCategory">
+      <soap:operation soapAction="http://ArmandoShop.categoryService/ICategoryService/ModifyCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IOrdersService" type="i3:IOrdersService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListOrders">
+      <soap:operation soapAction="http://ArmandoShop.OrdersService/IOrdersService/ListOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOrder">
+      <soap:operation soapAction="http://ArmandoShop.OrdersService/IOrdersService/GetOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewOrder">
+      <soap:operation soapAction="http://ArmandoShop.OrdersService/IOrdersService/NewOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyOrder">
+      <soap:operation soapAction="http://ArmandoShop.OrdersService/IOrdersService/ModifyOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOrder">
+      <soap:operation soapAction="http://ArmandoShop.OrdersService/IOrdersService/DeleteOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IContractsService" type="i4:IContractsService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListContracts">
+      <soap:operation soapAction="http://ArmandoShop.ContractsService/IContractsService/ListContracts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewContract">
+      <soap:operation soapAction="http://ArmandoShop.ContractsService/IContractsService/NewContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyContract">
+      <soap:operation soapAction="http://ArmandoShop.ContractsService/IContractsService/ModifyContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteContract">
+      <soap:operation soapAction="http://ArmandoShop.ContractsService/IContractsService/DeleteContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IUsersService" type="i5:IUsersService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://ArmandoShop.UsersService/IUsersService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUsernameAvaiable">
+      <soap:operation soapAction="http://ArmandoShop.UsersService/IUsersService/IsUsernameAvaiable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewUser">
+      <soap:operation soapAction="http://ArmandoShop.UsersService/IUsersService/NewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUser">
+      <soap:operation soapAction="http://ArmandoShop.UsersService/IUsersService/ModifyUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://ArmandoShop.UsersService/IUsersService/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ICustomersService" type="i6:ICustomersService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCustomer">
+      <soap:operation soapAction="http://ArmandoShop.CustomersService/ICustomersService/GetCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerByUser">
+      <soap:operation soapAction="http://ArmandoShop.CustomersService/ICustomersService/GetCustomerByUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCustomers">
+      <soap:operation soapAction="http://ArmandoShop.CustomersService/ICustomersService/ListCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewCustomer">
+      <soap:operation soapAction="http://ArmandoShop.CustomersService/ICustomersService/NewCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCustomer">
+      <soap:operation soapAction="http://ArmandoShop.CustomersService/ICustomersService/ModifyCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomer">
+      <soap:operation soapAction="http://ArmandoShop.CustomersService/ICustomersService/DeleteCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HttpArmandoShopService">
+    <wsdl:port name="BasicHttpBinding_IProductsService" binding="tns:BasicHttpBinding_IProductsService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IProvidersService" binding="tns:BasicHttpBinding_IProvidersService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ICategoryService" binding="tns:BasicHttpBinding_ICategoryService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IOrdersService" binding="tns:BasicHttpBinding_IOrdersService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IContractsService" binding="tns:BasicHttpBinding_IContractsService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IUsersService" binding="tns:BasicHttpBinding_IUsersService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ICustomersService" binding="tns:BasicHttpBinding_ICustomersService">
+      <soap:address location="http://localhost:8080/HtppArmandoShopService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

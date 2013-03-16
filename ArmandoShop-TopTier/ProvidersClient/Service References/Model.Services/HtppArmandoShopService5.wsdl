@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ArmandoShop.UsersService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ArmandoShop.UsersService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ArmandoShop.UsersService/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd8" namespace="http://ArmandoShop.UsersService" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd0" namespace="http://ArmandoShop.ProductsService" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ArmandoShop.Model" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd3" namespace="http://ArmandoShop.ProvidersService" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd4" namespace="http://ArmandoShop.categoryService" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd5" namespace="http://ArmandoShop.OrdersService" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8080/HtppArmandoShopService?xsd=xsd7" namespace="http://ArmandoShop.ContractsService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUsersService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_IsUsernameAvaiable_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUsernameAvaiable" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_IsUsernameAvaiable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUsernameAvaiableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_NewUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewUser" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_NewUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_ModifyUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyUser" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_ModifyUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IUsersService_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUsersService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://ArmandoShop.UsersService/IUsersService/Login" message="tns:IUsersService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.UsersService/IUsersService/LoginResponse" message="tns:IUsersService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUsernameAvaiable">
+      <wsdl:input wsaw:Action="http://ArmandoShop.UsersService/IUsersService/IsUsernameAvaiable" message="tns:IUsersService_IsUsernameAvaiable_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.UsersService/IUsersService/IsUsernameAvaiableResponse" message="tns:IUsersService_IsUsernameAvaiable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewUser">
+      <wsdl:input wsaw:Action="http://ArmandoShop.UsersService/IUsersService/NewUser" message="tns:IUsersService_NewUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.UsersService/IUsersService/NewUserResponse" message="tns:IUsersService_NewUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUser">
+      <wsdl:input wsaw:Action="http://ArmandoShop.UsersService/IUsersService/ModifyUser" message="tns:IUsersService_ModifyUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.UsersService/IUsersService/ModifyUserResponse" message="tns:IUsersService_ModifyUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://ArmandoShop.UsersService/IUsersService/DeleteUser" message="tns:IUsersService_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.UsersService/IUsersService/DeleteUserResponse" message="tns:IUsersService_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

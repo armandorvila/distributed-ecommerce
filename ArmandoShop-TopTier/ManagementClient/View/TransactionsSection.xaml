@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="ArmandoShop.ManagementClient.View.TransactionsSection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="380" d:DesignWidth="664">
+    <Grid Height="365" Width="643" Name="grid4">
+        <ListView Height="234" HorizontalAlignment="Left" ItemsSource="{Binding Orders}"
+                  SelectedValue="{Binding SelectedOrder}"
+                  Margin="12,54,0,0" Name="ordersListView" VerticalAlignment="Top" 
+                  Width="306" FontWeight="Bold">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Customer" 
+                 DisplayMemberBinding ="{Binding Path=customer.name}" 
+                                    Width="60" />
+                    <GridViewColumn Header="Date Of Buy" 
+                 DisplayMemberBinding ="{Binding Path=dateOfBuy}" 
+                                    Width="90" />
+                    <GridViewColumn Header="Date Of Deliver" 
+                 DisplayMemberBinding ="{Binding Path=dateOfDeliver }" 
+                                    Width="90" />
+                    <GridViewColumn Header="Delivered" 
+                 DisplayMemberBinding ="{Binding Path=delivered}" 
+                                    Width="60" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Height="234" HorizontalAlignment="Left" 
+                  Margin="346,54,0,0" ItemsSource="{Binding Contracts}" SelectedValue="{Binding SelectedContract}"
+                  Name="contractsListView" VerticalAlignment="Top" Width="285" FontWeight="Bold">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Provider" 
+                 DisplayMemberBinding ="{Binding Path=provider.name}" 
+                                    Width="60" />
+                    <GridViewColumn Header="Product" 
+                 DisplayMemberBinding ="{Binding Path=product.name}" 
+                                    Width="70" />
+                    <GridViewColumn Header="Stock" 
+                 DisplayMemberBinding ="{Binding Path=stock}" 
+                                    Width="40" />
+                    <GridViewColumn Header="Date" 
+                 DisplayMemberBinding ="{Binding Path=date}" 
+                                    Width="50" />
+                    <GridViewColumn Header="Charged" 
+                 DisplayMemberBinding ="{Binding Path=charged}" 
+                                    Width="55" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Label Content="Orders" Height="28" HorizontalAlignment="Left" 
+               Margin="12,12,0,0" Name="ordersHeaderLabel" VerticalAlignment="Top" Width="193" FontWeight="Bold" />
+        <Label Content="Contracts" Height="28" HorizontalAlignment="Left" 
+               Margin="306,12,0,0" Name="contractsHeaderLabel" VerticalAlignment="Top" Width="192" FontWeight="Bold" />
+        <Button Command="{Binding DeliverOrderCommand}" Content="Tick Deliver" Height="21" 
+                HorizontalAlignment="Left" Margin="157,311,0,0" Name="deliverOrderButton" 
+                VerticalAlignment="Top" Width="66" />
+        <Button Command="{Binding DeleteContractCommand}" Content="Delete" Height="21" 
+                HorizontalAlignment="Left" Margin="564,311,0,0" Name="deleteContractButton" VerticalAlignment="Top" Width="67" />
+        <Button Command="{Binding DeleteOrderCommand}" Content="Delete" Height="21" 
+                HorizontalAlignment="Left" Margin="250,311,0,0" Name="deleteOrderCommand" VerticalAlignment="Top" Width="68" />
+        <Button Command="{Binding MarkAsPaidCommand}" Content="Resolve" Height="21" HorizontalAlignment="Left" Margin="466,311,0,0" Name="button4" VerticalAlignment="Top" Width="68" />
+    </Grid>
+</UserControl>

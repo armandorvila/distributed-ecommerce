@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C725F139-BBE7-4F15-A0C9-259D7E6D2D2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArmandoShop.Business</RootNamespace>
+    <AssemblyName>ArmandoShop.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>C:\Program Files (x86)\Spring.NET 1.3.0\bin\net\2.0\release\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>C:\Program Files (x86)\Spring.NET 1.3.0\bin\net\2.0\release\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Services">
+      <HintPath>C:\Program Files (x86)\Spring.NET 1.3.0\bin\net\3.0\release\Spring.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessFactory.cs" />
+    <Compile Include="Categories\CategoriesManager.cs" />
+    <Compile Include="Categories\CategoriesFacadeImpl.cs" />
+    <Compile Include="Categories\CategoriesSupplier.cs" />
+    <Compile Include="Contracts\ContractsFacadeImpl.cs" />
+    <Compile Include="Customers\CustomersFacadeImpl.cs" />
+    <Compile Include="ICategoriesFacade.cs" />
+    <Compile Include="IContractsFacade.cs" />
+    <Compile Include="ICustomersFacade.cs" />
+    <Compile Include="IOrdersFacade.cs" />
+    <Compile Include="IProductsFacade.cs" />
+    <Compile Include="IProvidersFacade.cs" />
+    <Compile Include="IUsersFacade.cs" />
+    <Compile Include="Orders\OrdersFacadeImpl.cs" />
+    <Compile Include="Orders\OrdersManager.cs" />
+    <Compile Include="Orders\OrdersSupplier.cs" />
+    <Compile Include="Products\ProductsManager.cs" />
+    <Compile Include="Products\ProductsSupplier.cs" />
+    <Compile Include="Products\ProductsFacadeImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ProvidersFacadeImpl.cs" />
+    <Compile Include="Providers\ProvidersManager.cs" />
+    <Compile Include="Providers\ProvidersSupplier.cs" />
+    <Compile Include="Users\UsersFacadeImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{584D8371-4289-4F21-8518-2624C0401AE8}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{3EC8D8B9-AC9A-40D4-B951-51795986B340}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Spring\ArmandoShop.Spring.Business.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

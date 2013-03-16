@@ -1,0 +1,47 @@
+﻿<Window x:Class="ArmandoShop.ManagementClient.View.Providers.ProviderView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Provider" Height="372" Width="388">
+    <Grid>
+        <Label Content="Name:" Height="28" HorizontalAlignment="Left" 
+               Margin="9,10,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Surname:" Height="28" HorizontalAlignment="Left" 
+               Margin="9,51,0,0" Name="surnameLabel" VerticalAlignment="Top" />
+        <Label Content="Mail:" Height="28" HorizontalAlignment="Left" 
+               Margin="12,93,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Address:" Height="28" HorizontalAlignment="Left" 
+               Margin="9,136,0,0" Name="addressLabel" VerticalAlignment="Top" />
+        <Label Content="Phone:" Height="28" HorizontalAlignment="Left" 
+               Margin="10,165,0,0" Name="phoneLabel" VerticalAlignment="Top" />
+        <Label Content="Username:" Height="28" HorizontalAlignment="Left" 
+               Margin="9,0,0,106" Name="label3" VerticalAlignment="Bottom" />
+        <Label Content="Password:" Height="28" HorizontalAlignment="Left" 
+               Margin="10,233,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Text="{Binding Name}" Height="23" HorizontalAlignment="Left"
+                 Margin="94,12,0,0" 
+                 Name="nameTextBox" VerticalAlignment="Top" Width="231" />
+        <TextBox Text="{Binding Surname}" Height="23" HorizontalAlignment="Left"
+                 Margin="94,56,0,0" 
+                 Name="surnameTextBox" VerticalAlignment="Top" Width="231" />
+        <TextBox Text="{Binding Address}" Height="23" HorizontalAlignment="Left"
+                 Margin="94,95,0,0" 
+                 Name="addressTextBox" VerticalAlignment="Top" Width="231" />
+        <TextBox Text="{Binding Mail}" Height="23" HorizontalAlignment="Left"
+                 Margin="94,136,0,0" 
+                 Name="mailTextBox" VerticalAlignment="Top" Width="231" />
+        <TextBox Text="{Binding Phone}" Height="23" HorizontalAlignment="Left"
+                 Margin="94,170,0,0" 
+                 Name="phoneTextBox" VerticalAlignment="Top" Width="231" />
+        <TextBox Text="{Binding Username}" Height="23" Margin="0,201,41,0" 
+                 Name="stockTextBox" VerticalAlignment="Top" HorizontalAlignment="Right" Width="231" />
+
+        <TextBox Text="{Binding Password}" Height="28" HorizontalAlignment="Left" Margin="94,235,0,0" 
+                     Name="richTextBox1" VerticalAlignment="Top" Width="231" />
+
+        <Button Command="{Binding Done}" Content="{Binding Action}" Height="23" Click="Exit"
+                HorizontalAlignment="Left" Margin="94,285,0,0" 
+                Name="button1" VerticalAlignment="Top" Width="75" />
+        <Button Click="Exit" Content="Cancel" Height="23" HorizontalAlignment="Left" 
+                Margin="193,285,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
+    </Grid>
+</Window>

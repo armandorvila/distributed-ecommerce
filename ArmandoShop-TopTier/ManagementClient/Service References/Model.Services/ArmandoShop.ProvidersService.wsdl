@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ArmandoShop.ProvidersService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ArmandoShop.ProvidersService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ArmandoShop.ProvidersService/Imports">
+      <xsd:import namespace="http://ArmandoShop.ProvidersService" />
+      <xsd:import namespace="http://ArmandoShop.ProductsService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ArmandoShop.Model" />
+      <xsd:import namespace="http://ArmandoShop.CustomersService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProvidersService_GetProvider_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvider" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_GetProvider_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_GetProviderByUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderByUser" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_GetProviderByUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_ListProviders_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListProviders" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_ListProviders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListProvidersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_GetProvidersByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvidersByCategory" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_GetProvidersByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProvidersByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_NewProvider_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewProvider" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_NewProvider_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewProviderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_ModifyProvider_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProvider" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_ModifyProvider_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProviderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_DeleteProvider_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProvider" />
+  </wsdl:message>
+  <wsdl:message name="IProvidersService_DeleteProvider_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProviderResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProvidersService">
+    <wsdl:operation name="GetProvider">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/GetProvider" message="tns:IProvidersService_GetProvider_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/GetProviderResponse" message="tns:IProvidersService_GetProvider_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProviderByUser">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/GetProviderByUser" message="tns:IProvidersService_GetProviderByUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/GetProviderByUserResponse" message="tns:IProvidersService_GetProviderByUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListProviders">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/ListProviders" message="tns:IProvidersService_ListProviders_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/ListProvidersResponse" message="tns:IProvidersService_ListProviders_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProvidersByCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/GetProvidersByCategory" message="tns:IProvidersService_GetProvidersByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/GetProvidersByCategoryResponse" message="tns:IProvidersService_GetProvidersByCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewProvider">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/NewProvider" message="tns:IProvidersService_NewProvider_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/NewProviderResponse" message="tns:IProvidersService_NewProvider_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProvider">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/ModifyProvider" message="tns:IProvidersService_ModifyProvider_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/ModifyProviderResponse" message="tns:IProvidersService_ModifyProvider_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProvider">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/DeleteProvider" message="tns:IProvidersService_DeleteProvider_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProvidersService/IProvidersService/DeleteProviderResponse" message="tns:IProvidersService_DeleteProvider_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

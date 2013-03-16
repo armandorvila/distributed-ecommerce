@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A09B217-E722-4340-ADA2-E0F3E22402F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArmandoShop.ManagementClient</RootNamespace>
+    <AssemblyName>ArmandoShop.ManagementClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Model\Application\StaticsHelper.cs" />
+    <Compile Include="Model\Services\DelegateCategoryService.cs" />
+    <Compile Include="Model\Services\DelegateCotnractsService.cs" />
+    <Compile Include="Model\Services\DelegateCustomersService.cs" />
+    <Compile Include="Model\Services\DelegateOrdersService.cs" />
+    <Compile Include="Model\Services\DelegateProductsService.cs" />
+    <Compile Include="Model\Services\DelegateProvidersService.cs" />
+    <Compile Include="Model\Services\DelegateUsersService.cs" />
+    <Compile Include="ViewModel\Categories\CategoritiesViewModel.cs" />
+    <Compile Include="ViewModel\Categories\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\Customers\CustomersViewModel.cs" />
+    <Compile Include="ViewModel\Customers\CustomerViewModel.cs" />
+    <Compile Include="ViewModel\DelegateCommand.cs" />
+    <Compile Include="ViewModel\Categories\ProductsOfCategoryViewModel.cs" />
+    <Compile Include="ViewModel\Products\ProductsViewModel.cs" />
+    <Compile Include="ViewModel\Products\ProductViewModel.cs" />
+    <Compile Include="ViewModel\Providers\ProvidersViewModel.cs" />
+    <Compile Include="ViewModel\Providers\ProviderViewModel.cs" />
+    <Compile Include="ViewModel\StaticsViewModel.cs" />
+    <Compile Include="ViewModel\Transactions\TransactionsViewModel.cs" />
+    <Compile Include="View\CategoriesSection.xaml.cs">
+      <DependentUpon>CategoriesSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Categories\CategoryView.xaml.cs">
+      <DependentUpon>CategoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CustomersSection.xaml.cs">
+      <DependentUpon>CustomersSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Categories\ProductsOfCategory.xaml.cs">
+      <DependentUpon>ProductsOfCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customers\CustomerView.xaml.cs">
+      <DependentUpon>CustomerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductsSection.xaml.cs">
+      <DependentUpon>ProductsSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Products\ProductView.xaml.cs">
+      <DependentUpon>ProductView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProvidersSection.xaml.cs">
+      <DependentUpon>ProvidersSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Providers\ProviderView.xaml.cs">
+      <DependentUpon>ProviderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SingleSection.xaml.cs">
+      <DependentUpon>SingleSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaticsSection.xaml.cs">
+      <DependentUpon>StaticsSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TransactionsSection.xaml.cs">
+      <DependentUpon>TransactionsSection.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\CategoriesSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Categories\CategoryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CustomersSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Customers\CustomerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Service References\Model.Services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\Categories\ProductsOfCategory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProductsSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Products\ProductView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProvidersSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Providers\ProviderView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SingleSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StaticsSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TransactionsSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Service References\Model.Services\ArmandoShop.categoryService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.categoryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ContractsService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.ContractsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.CustomersService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.CustomersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.Category.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.Contract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.Order.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.Provider.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ManagementClient.Model.Services.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.Model.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.OrdersService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.OrdersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ProductsService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.ProductsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.ProvidersService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.ProvidersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\ArmandoShop.UsersService.wsdl" />
+    <None Include="Service References\Model.Services\ArmandoShop.UsersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Model.Services\service.wsdl" />
+    <None Include="Service References\Model.Services\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\Transactions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Model.Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Model.Services\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Model.Services\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Model.Services\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\armandorv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\header_bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

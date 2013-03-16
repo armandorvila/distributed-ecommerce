@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f5e3c62e-2b35-4bb3-8980-f547b1538662" name="armandorv@ARMANDORV-PC 2012-03-29 15:37:21" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-03-29 15_37_21">
+      <DeploymentItem filename="C:\Program Files (x86)\Spring.NET 1.3.0\bin\net\2.0\release\Spring.Core.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Release\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Release\ArmandoShop.DataAccess.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Spring.NET 1.3.0\bin\net\3.0\release\Spring.Services.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Spring.NET 1.3.0\bin\net\2.0\release\Common.Logging.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\ArmandoShop.Business.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-29T15:37:21.2030326+02:00" queuing="2012-03-29T15:37:21.2498327+02:00" start="2012-03-29T15:37:21.2654327+02:00" finish="2012-03-29T15:37:21.6710334+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetProductsFacadeTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\business.tests\bin\release\business.tests.dll" id="c887edf6-d9e4-912a-f999-637f4f1ea603">
+      <Execution id="76949cd9-8e4b-428c-ba0c-0b56ac315751" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/Business.Tests/bin/Release/Business.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Business.Tests.BusinessFactoryTest, Business.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetProductsFacadeTest" />
+    </UnitTest>
+    <UnitTest name="GetProvidersFacadeTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\business.tests\bin\release\business.tests.dll" id="d038370d-01cf-ed5f-1b9b-57882be896e8">
+      <Execution id="e767318c-bd90-43ac-87f4-d4d8f2ea218f" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/Business.Tests/bin/Release/Business.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Business.Tests.BusinessFactoryTest, Business.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetProvidersFacadeTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c887edf6-d9e4-912a-f999-637f4f1ea603" executionId="76949cd9-8e4b-428c-ba0c-0b56ac315751" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d038370d-01cf-ed5f-1b9b-57882be896e8" executionId="e767318c-bd90-43ac-87f4-d4d8f2ea218f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="76949cd9-8e4b-428c-ba0c-0b56ac315751" testId="c887edf6-d9e4-912a-f999-637f4f1ea603" testName="GetProductsFacadeTest" computerName="ARMANDORV-PC" duration="00:00:00.2051222" startTime="2012-03-29T15:37:21.2654327+02:00" endTime="2012-03-29T15:37:21.6398334+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76949cd9-8e4b-428c-ba0c-0b56ac315751">
+      <Output>
+        <DebugTrace>Unable to read configuration section common/logging.  Using no-op implemenation.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>El método de prueba Business.Tests.BusinessFactoryTest.GetProductsFacadeTest produjo la excepción: 
+System.Configuration.ConfigurationErrorsException: Error creating context 'spring.root': No se puede cargar el tipo 'ArmandoShop.Business.Products.ProductsProvider' del ensamblado'ArmandoShop.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. ---&gt; Spring.Objects.Factory.ObjectCreationException: Error creating object with name 'productsFacade' defined in 'config [D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\bin\Release\Business.Tests.DLL.config#spring/objects] line 2' : Initialization of object failed : Cannot resolve type [ArmandoShop.Business.Products.ProductsProvider, ArmandoShop.Business] for object with name 'productProvider' defined in config [D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\bin\Release\Business.Tests.DLL.config#spring/objects] line 4 ---&gt; Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [ArmandoShop.Business.Products.ProductsProvider, ArmandoShop.Business] for object with name 'productProvider' defined in config [D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\bin\Release\Business.Tests.DLL.config#spring/objects] line 4 ---&gt; System.TypeLoadException: No se puede cargar el tipo 'ArmandoShop.Business.Products.ProductsProvider' del ensamblado'ArmandoShop.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.</Message>
+          <StackTrace>    en System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   en System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   en Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:línea 121
+   en Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:línea 75
+   en Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:línea 97
+   en Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:línea 107
+   en Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:línea 106
+   en Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:línea 642
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 1088
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 1096
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 854
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2120
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2046
+   en Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolveReference(IObjectDefinition definition, String name, String argumentName, RuntimeObjectReference reference) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\ObjectDefinitionValueResolver.cs:línea 369
+   en Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolvePropertyValue(String name, IObjectDefinition definition, String argumentName, Object argumentValue) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\ObjectDefinitionValueResolver.cs:línea 163
+   en Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolveValueIfNecessary(String name, IObjectDefinition definition, String argumentName, Object argumentValue) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\ObjectDefinitionValueResolver.cs:línea 112
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ApplyPropertyValues(String name, RootObjectDefinition definition, IObjectWrapper wrapper, IPropertyValues properties) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 373
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PopulateObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 563
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 1844
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 909
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 926
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2120
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2046
+   en Spring.Objects.Factory.Support.DefaultListableObjectFactory.PreInstantiateSingletons() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:línea 505
+   en Spring.Context.Support.AbstractApplicationContext.Refresh() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:línea 911
+   en _dynamic_Spring.Context.Support.XmlApplicationContext..ctor(Object[] )
+   en Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicConstructor.cs:línea 116
+   en Spring.Context.Support.ContextHandler.RootContextInstantiator.InvokeContextConstructor(ConstructorInfo ctor) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 550
+   en Spring.Context.Support.ContextHandler.ContextInstantiator.InstantiateContext() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 494
+   en Spring.Context.Support.ContextHandler.InstantiateContext(IApplicationContext parentContext, Object configContext, String contextName, Type contextType, Boolean caseSensitive, String[] resources) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 330
+   en Spring.Context.Support.ContextHandler.Create(Object parent, Object configContext, XmlNode section) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 280
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   en System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   en System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   en System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   en Spring.Util.ConfigurationUtils.GetSection(String sectionName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Util\ConfigurationUtils.cs:línea 69
+   en Spring.Context.Support.ContextRegistry.InitializeContextIfNeeded() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextRegistry.cs:línea 340
+   en Spring.Context.Support.ContextRegistry.GetContext() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextRegistry.cs:línea 206
+   en ArmandoShop.Business.BusinessFactory.GetProductsFacade() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\BusinessFactory.cs:línea 24
+   en Business.Tests.BusinessFactoryTest.GetProductsFacadeTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\BusinessFactoryTest.cs:línea 34
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e767318c-bd90-43ac-87f4-d4d8f2ea218f" testId="d038370d-01cf-ed5f-1b9b-57882be896e8" testName="GetProvidersFacadeTest" computerName="ARMANDORV-PC" duration="00:00:00.0105379" startTime="2012-03-29T15:37:21.6398334+02:00" endTime="2012-03-29T15:37:21.6554334+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e767318c-bd90-43ac-87f4-d4d8f2ea218f">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba Business.Tests.BusinessFactoryTest.GetProvidersFacadeTest produjo la excepción: 
+System.Configuration.ConfigurationErrorsException: Error creating context 'spring.root': No se puede cargar el tipo 'ArmandoShop.Business.Products.ProductsProvider' del ensamblado'ArmandoShop.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. ---&gt; Spring.Objects.Factory.ObjectCreationException: Error creating object with name 'productsFacade' defined in 'config [D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\bin\Release\Business.Tests.DLL.config#spring/objects] line 2' : Initialization of object failed : Cannot resolve type [ArmandoShop.Business.Products.ProductsProvider, ArmandoShop.Business] for object with name 'productProvider' defined in config [D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\bin\Release\Business.Tests.DLL.config#spring/objects] line 4 ---&gt; Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [ArmandoShop.Business.Products.ProductsProvider, ArmandoShop.Business] for object with name 'productProvider' defined in config [D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\bin\Release\Business.Tests.DLL.config#spring/objects] line 4 ---&gt; System.TypeLoadException: No se puede cargar el tipo 'ArmandoShop.Business.Products.ProductsProvider' del ensamblado'ArmandoShop.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.</Message>
+          <StackTrace>    en System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   en System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   en Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:línea 121
+   en Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\TypeResolver.cs:línea 75
+   en Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\GenericTypeResolver.cs:línea 97
+   en Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\CachedTypeResolver.cs:línea 107
+   en Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Core\TypeResolution\TypeResolutionUtils.cs:línea 106
+   en Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectDefinition.cs:línea 642
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 1088
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 1096
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 854
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2120
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2046
+   en Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolveReference(IObjectDefinition definition, String name, String argumentName, RuntimeObjectReference reference) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\ObjectDefinitionValueResolver.cs:línea 369
+   en Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolvePropertyValue(String name, IObjectDefinition definition, String argumentName, Object argumentValue) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\ObjectDefinitionValueResolver.cs:línea 163
+   en Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolveValueIfNecessary(String name, IObjectDefinition definition, String argumentName, Object argumentValue) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\ObjectDefinitionValueResolver.cs:línea 112
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ApplyPropertyValues(String name, RootObjectDefinition definition, IObjectWrapper wrapper, IPropertyValues properties) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 373
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.PopulateObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 563
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.ConfigureObject(String name, RootObjectDefinition definition, IObjectWrapper wrapper) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 1844
+   en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 909
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractAutowireCapableObjectFactory.cs:línea 926
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2120
+   en Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\AbstractObjectFactory.cs:línea 2046
+   en Spring.Objects.Factory.Support.DefaultListableObjectFactory.PreInstantiateSingletons() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Objects\Factory\Support\DefaultListableObjectFactory.cs:línea 505
+   en Spring.Context.Support.AbstractApplicationContext.Refresh() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\AbstractApplicationContext.cs:línea 911
+   en _dynamic_Spring.Context.Support.XmlApplicationContext..ctor(Object[] )
+   en Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Reflection\Dynamic\DynamicConstructor.cs:línea 116
+   en Spring.Context.Support.ContextHandler.RootContextInstantiator.InvokeContextConstructor(ConstructorInfo ctor) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 550
+   en Spring.Context.Support.ContextHandler.ContextInstantiator.InstantiateContext() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 494
+   en Spring.Context.Support.ContextHandler.InstantiateContext(IApplicationContext parentContext, Object configContext, String contextName, Type contextType, Boolean caseSensitive, String[] resources) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 330
+   en Spring.Context.Support.ContextHandler.Create(Object parent, Object configContext, XmlNode section) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextHandler.cs:línea 280
+ --- Fin del seguimiento de la pila de la excepción interna ---
+    en System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   en System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)
+   en System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   en System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   en System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   en Spring.Util.ConfigurationUtils.GetSection(String sectionName) en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Util\ConfigurationUtils.cs:línea 69
+   en Spring.Context.Support.ContextRegistry.InitializeContextIfNeeded() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextRegistry.cs:línea 340
+   en Spring.Context.Support.ContextRegistry.GetContext() en l:\projects\spring-net\trunk\src\Spring\Spring.Core\Context\Support\ContextRegistry.cs:línea 206
+   en ArmandoShop.Business.BusinessFactory.GetProvidersFacade() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\BusinessFactory.cs:línea 32
+   en Business.Tests.BusinessFactoryTest.GetProvidersFacadeTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business.Tests\BusinessFactoryTest.cs:línea 47
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

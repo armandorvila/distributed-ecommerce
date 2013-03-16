@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="429a78b6-c05a-409a-8e52-75a60f6c3b7e" name="armandorv@ARMANDORV-PC 2012-04-04 15:47:17" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment userDeploymentRoot="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-04-04 15_47_17">
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Debug\ArmandoShop.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-04T15:47:17.4879960+02:00" queuing="2012-04-04T15:47:17.5079966+02:00" start="2012-04-04T15:47:17.5279967+02:00" finish="2012-04-04T15:47:17.8079971+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="b959f45d-9227-8acc-24b4-6ba23aed2dad">
+      <Execution id="1e627eb3-8780-4a09-aef5-add2f2208d04" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="2e9dc7d2-e059-ef16-f604-17042dfaea10">
+      <Execution id="ddba74f8-9e91-4f96-81f6-4fd438c4925f" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b959f45d-9227-8acc-24b4-6ba23aed2dad" executionId="1e627eb3-8780-4a09-aef5-add2f2208d04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e9dc7d2-e059-ef16-f604-17042dfaea10" executionId="ddba74f8-9e91-4f96-81f6-4fd438c4925f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1e627eb3-8780-4a09-aef5-add2f2208d04" testId="b959f45d-9227-8acc-24b4-6ba23aed2dad" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.0626264" startTime="2012-04-04T15:47:17.5279967+02:00" endTime="2012-04-04T15:47:17.7779970+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e627eb3-8780-4a09-aef5-add2f2208d04">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.CustomerDAOTest.CreateTest produjo la excepción: 
+System.InvalidOperationException: Error Ejectuando la transaccion : ArgumentNullExceptionLa consulta con parámetros 'Insert into customer (id,name,surname,address,phone,mail,id_user) values (@Id,@Name,@Surname,@Address,@Phone,@Mail,@IdUser)' espera un valor de parámetro, que no se ha proporcionado.
+Nombre del parámetro: Mail</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.UpdateExecutor.Persist(String createSql, String maxIdSql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\UpdateExecutor.cs:línea 38
+   en ArmandoShop.DataAccess.Core.CustomerDAO.Create(Customer element) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\CustomerDAO.cs:línea 32
+   en ArmandoShop.DataAccess.Tests.CustomerDAOTest.CreateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\CustomerDAOTest.cs:línea 68
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ddba74f8-9e91-4f96-81f6-4fd438c4925f" testId="2e9dc7d2-e059-ef16-f604-17042dfaea10" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0182875" startTime="2012-04-04T15:47:17.7779970+02:00" endTime="2012-04-04T15:47:17.7979970+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddba74f8-9e91-4f96-81f6-4fd438c4925f">
+      <Output>
+        <StdOut>Before :Product [Id=1 ,Name=prueba ,surname=prueba ,Address=prueba ,Phone =prueba]</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.CustomerDAOTest.UpdateTest produjo la excepción: 
+System.ArgumentNullException: La consulta con parámetros 'Update customer set name= @Name,surname= @Surname, address= @Address, phone=@Phone,mail=@Mail,id_user=@IdUser where id=@Id' espera un valor de parámetro, que no se ha proporcionado.
+Nombre del parámetro: Mail</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.UpdateExecutor.Update(String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\UpdateExecutor.cs:línea 62
+   en ArmandoShop.DataAccess.Core.CustomerDAO.Update(Customer element) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\CustomerDAO.cs:línea 52
+   en ArmandoShop.DataAccess.Tests.CustomerDAOTest.UpdateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\CustomerDAOTest.cs:línea 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

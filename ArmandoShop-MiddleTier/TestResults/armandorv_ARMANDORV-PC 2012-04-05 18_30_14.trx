@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b435c8fa-ecd0-4bc9-a580-a178cb56518b" name="armandorv@ARMANDORV-PC 2012-04-05 18:30:14" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-04-05 18_30_14">
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Debug\ArmandoShop.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-05T18:30:14.0248476+02:00" queuing="2012-04-05T18:30:16.7809996+02:00" start="2012-04-05T18:30:16.9780109+02:00" finish="2012-04-05T18:30:17.9610643+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="1" error="0" failed="5" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="ac6ae157-476b-c5a9-30ff-968b97ebd371">
+      <Execution id="c3005add-2491-4faf-97d8-fa3603e0a0b3" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="GetProductsByElementTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="e7346735-74e2-609a-e8b4-d515e59496ef">
+      <Execution id="407ddbca-c494-48c2-abb9-5203f8a49526" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetProductsByElementTest" />
+    </UnitTest>
+    <UnitTest name="TestFindAllorders" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="f94213ab-5baa-6c6a-4566-c2d2c70c216a">
+      <Execution id="e989bf35-90bf-4039-b3f8-83c174add8ab" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindAllorders" />
+    </UnitTest>
+    <UnitTest name="TestFindById" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a3ad16db-a1cc-b4e3-3232-4990e1ba5f28">
+      <Execution id="8c4f74df-0a52-42b3-a2ee-29381139d8d1" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindById" />
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a041aa35-bc85-233b-5e08-1197604f2778">
+      <Execution id="7f65ae4e-a43d-4351-9f46-571431a38b4e" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="0b284713-3661-e80e-95ea-f640b439883e">
+      <Execution id="27ed4353-92d8-43b6-b4bb-e940c6a7e49d" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.OrderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b284713-3661-e80e-95ea-f640b439883e" executionId="27ed4353-92d8-43b6-b4bb-e940c6a7e49d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a041aa35-bc85-233b-5e08-1197604f2778" executionId="7f65ae4e-a43d-4351-9f46-571431a38b4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3ad16db-a1cc-b4e3-3232-4990e1ba5f28" executionId="8c4f74df-0a52-42b3-a2ee-29381139d8d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac6ae157-476b-c5a9-30ff-968b97ebd371" executionId="c3005add-2491-4faf-97d8-fa3603e0a0b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7346735-74e2-609a-e8b4-d515e59496ef" executionId="407ddbca-c494-48c2-abb9-5203f8a49526" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f94213ab-5baa-6c6a-4566-c2d2c70c216a" executionId="e989bf35-90bf-4039-b3f8-83c174add8ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="27ed4353-92d8-43b6-b4bb-e940c6a7e49d" testId="0b284713-3661-e80e-95ea-f640b439883e" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.2371199" startTime="2012-04-05T18:30:17.0500150+02:00" endTime="2012-04-05T18:30:17.7490522+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27ed4353-92d8-43b6-b4bb-e940c6a7e49d">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.CreateTest produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.OrderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\OrderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.CreateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 44
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f65ae4e-a43d-4351-9f46-571431a38b4e" testId="a041aa35-bc85-233b-5e08-1197604f2778" testName="DeleteTest" computerName="ARMANDORV-PC" duration="00:00:00.0448261" startTime="2012-04-05T18:30:17.7560526+02:00" endTime="2012-04-05T18:30:17.8250566+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f65ae4e-a43d-4351-9f46-571431a38b4e">
+      <Output>
+        <StdOut>Testing Delete order : 
+
+Current orders  : 
+
+Deleting Last ordern</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.DeleteTest produjo la excepción: 
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index</Message>
+          <StackTrace>    en System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.DeleteTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 70
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c4f74df-0a52-42b3-a2ee-29381139d8d1" testId="a3ad16db-a1cc-b4e3-3232-4990e1ba5f28" testName="TestFindById" computerName="ARMANDORV-PC" duration="00:00:00.0064563" startTime="2012-04-05T18:30:17.8260566+02:00" endTime="2012-04-05T18:30:17.8360572+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c4f74df-0a52-42b3-a2ee-29381139d8d1">
+      <Output>
+        <StdOut>Testing Getting order By Id: 1</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.TestFindById produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.OrderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\OrderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.TestFindById() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c3005add-2491-4faf-97d8-fa3603e0a0b3" testId="ac6ae157-476b-c5a9-30ff-968b97ebd371" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0068629" startTime="2012-04-05T18:30:17.8380573+02:00" endTime="2012-04-05T18:30:17.8490579+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3005add-2491-4faf-97d8-fa3603e0a0b3">
+      <Output>
+        <StdOut>Testing Update order : 
+
+Current orders  : 
+
+Updating Last order</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.UpdateTest produjo la excepción: 
+System.ArgumentOutOfRangeException: El índice estaba fuera del intervalo. Debe ser un valor no negativo e inferior al tamaño de la colección.
+Nombre del parámetro: index</Message>
+          <StackTrace>    en System.ThrowHelper.ThrowArgumentOutOfRangeException()
+   en System.Collections.Generic.List`1.get_Item(Int32 index)
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.UpdateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="407ddbca-c494-48c2-abb9-5203f8a49526" testId="e7346735-74e2-609a-e8b4-d515e59496ef" testName="GetProductsByElementTest" computerName="ARMANDORV-PC" duration="00:00:00.0077419" startTime="2012-04-05T18:30:17.8500580+02:00" endTime="2012-04-05T18:30:17.8930604+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="407ddbca-c494-48c2-abb9-5203f8a49526">
+      <Output>
+        <StdOut>GetProductsByElementTest :</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.OrderDAOTest.GetProductsByElementTest produjo la excepción: 
+System.Exception: There was zero or more of one row.</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 45
+   en ArmandoShop.DataAccess.Core.OrderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\OrderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.OrderDAOTest.GetProductsByElementTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\OrderDAOTest.cs:línea 102
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e989bf35-90bf-4039-b3f8-83c174add8ab" testId="f94213ab-5baa-6c6a-4566-c2d2c70c216a" testName="TestFindAllorders" computerName="ARMANDORV-PC" duration="00:00:00.0049883" startTime="2012-04-05T18:30:17.8930604+02:00" endTime="2012-04-05T18:30:17.9030610+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e989bf35-90bf-4039-b3f8-83c174add8ab">
+      <Output>
+        <StdOut>Testing Getting All orders: 
+
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

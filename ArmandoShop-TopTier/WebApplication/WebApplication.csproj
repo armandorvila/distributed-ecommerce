@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0308BEA2-8831-4A5E-AC79-C96300FB4340}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArmandoShop.WebApplication</RootNamespace>
+    <AssemblyName>ArmandoShop.WebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccessController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\InfoController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Application\Access\Validation\PropertiesMustMatchAttribute.cs" />
+    <Compile Include="Models\Application\Access\Validation\ValidatePasswordLengthAttribute.cs" />
+    <Compile Include="Models\Application\Access\Validation\AccessValidation.cs" />
+    <Compile Include="Models\Application\Access\AccessMembershipService.cs" />
+    <Compile Include="Models\Application\Access\FormsAuthenticationService.cs" />
+    <Compile Include="Models\Application\Access\IMembershipService.cs" />
+    <Compile Include="Models\Application\Access\IFormsAuthenticationService.cs" />
+    <Compile Include="Models\Application\Borker.cs" />
+    <Compile Include="Models\Application\ProductsSelector.cs" />
+    <Compile Include="Models\Application\StatsSummaryBuilder.cs" />
+    <Compile Include="Models\Model\ChangePasswordModel.cs" />
+    <Compile Include="Models\Model\Chart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Model\RegisterModel.cs" />
+    <Compile Include="Models\Model\LogOnModel.cs" />
+    <Compile Include="Models\Application\Access\DelegateMembershipProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Model\StaticsModel.cs" />
+    <Compile Include="Models\Services\DelegateCategoriesService.cs" />
+    <Compile Include="Models\Services\DelegateContractsService.cs" />
+    <Compile Include="Models\Services\DelegateCustomersService.cs" />
+    <Compile Include="Models\Services\DelegateOrdersService.cs" />
+    <Compile Include="Models\Services\DelegateProductsService.cs" />
+    <Compile Include="Models\Services\DelegateUsersService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Models.Services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\armandorv.jpg" />
+    <Content Include="Content\background_section_top_bg.jpg" />
+    <Content Include="Content\header_bg.jpg" />
+    <Content Include="Global.asax" />
+    <None Include="Service References\Models.Services\ArmandoShop.categoryService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.categoryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.ContractsService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.ContractsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.CustomersService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.CustomersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.Category.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.Contract.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.Customer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.Order.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.Product.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.Provider.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.WebApplication.Models.Services.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Models.Services\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\configuration91.svcinfo" />
+    <None Include="Service References\Models.Services\configuration.svcinfo" />
+    <None Include="Service References\Models.Services\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Views\Categories\Categories.aspx" />
+    <Content Include="Views\Cart\Cart.aspx" />
+    <Content Include="Views\Cart\Confirmation.aspx" />
+    <Content Include="Views\Products\MostWantedProducts.aspx" />
+    <Content Include="Views\Products\ProductsByCategory.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Access\LogOn.aspx" />
+    <Content Include="Views\Access\Register.aspx" />
+    <Content Include="Views\Info\Contact.aspx" />
+    <Content Include="Views\Info\Home.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Models.Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Models.Services\ArmandoShop.Model.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.OrdersService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.OrdersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.ProductsService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.ProductsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.ProvidersService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.ProvidersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\ArmandoShop.UsersService.wsdl" />
+    <None Include="Service References\Models.Services\ArmandoShop.UsersService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Models.Services\service.wsdl" />
+    <None Include="Service References\Models.Services\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>90</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

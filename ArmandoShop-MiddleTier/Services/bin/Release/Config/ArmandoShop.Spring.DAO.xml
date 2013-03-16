@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+
+  <!-- Data Acces Spring Objects Declarations -->
+
+  <!-- Simple Crud DAO definitions-->
+  <object name="userDAO"
+          type="ArmandoShop.DataAccess.IUserDAO, 
+          ArmandoShop.DataAccess"
+          factory-method="GetUserDAO" factory-object="daoFactory"/>
+
+  <object name="productDAO"
+          type="ArmandoShop.DataAccess.IDAO&lt;ArmandoShop.Model.Product>, 
+          ArmandoShop.DataAccess"
+          factory-method="GetProductDAO" factory-object="daoFactory"/>
+
+  <object name="providerDAO"
+        type="ArmandoShop.DataAccess.IDAO&lt;ArmandoShop.Model.Provider>, 
+          ArmandoShop.DataAccess"
+        factory-method="GetProviderDAO" factory-object="daoFactory"/>
+
+  <object name="categoryDAO"
+      type="ArmandoShop.DataAccess.IDAO&lt;ArmandoShop.Model.Category>, 
+          ArmandoShop.DataAccess"
+      factory-method="GetCategoryDAO" factory-object="daoFactory"/>
+
+  <object name="orderDAO"
+      type="ArmandoShop.DataAccess.IDAO&lt;ArmandoShop.Model.Order>, 
+          ArmandoShop.DataAccess"
+      factory-method="GetOrderDAO" factory-object="daoFactory"/>
+
+  <object name="customerDAO"
+        type="ArmandoShop.DataAccess.IDAO&lt;ArmandoShop.Model.Customer>, 
+        ArmandoShop.DataAccess"
+        factory-method="GetCustomerDAO" factory-object="daoFactory"/>
+
+  <object name="contractDAO"
+       type="ArmandoShop.DataAccess.IDAO&lt;ArmandoShop.Model.Contract>, 
+        ArmandoShop.DataAccess"
+       factory-method="GetContractDAO" factory-object="daoFactory"/>
+
+  <!-- Third aware DAO definitions-->
+
+  <object name="providerUserAwareDAO"  type="ArmandoShop.DataAccess.IUserAwareDAO&lt;ArmandoShop.Model.Provider>, ArmandoShop.DataAccess"
+          factory-method="GetProviderUserAwareDAO" factory-object="daoFactory"/>
+
+  <object name="customerUserAwareDAO" type="ArmandoShop.DataAccess.IUserAwareDAO&lt;ArmandoShop.Model.Customer>, ArmandoShop.DataAccess"
+          factory-method="GetCustomerUserAwareDAO" factory-object="daoFactory"/>
+
+  <object name="orderProductAwareDAO"
+          type="ArmandoShop.DataAccess.IProductAwareDAO&lt;ArmandoShop.Model.Order>, 
+          ArmandoShop.DataAccess" factory-method="GetOrderProductAwareDAO" factory-object="daoFactory"/>
+
+  <object name="providerCategoryAwareDAO"
+        type="ArmandoShop.DataAccess.ICategoryAwareDAO&lt;ArmandoShop.Model.Provider>, 
+        ArmandoShop.DataAccess"
+        factory-method="GetProviderCategoryAwareDAO" factory-object="daoFactory"/>
+
+  <object name="categoryProviderAwareDAO"
+          type="ArmandoShop.DataAccess.IProviderAwareDAO&lt;ArmandoShop.Model.Category>,
+          ArmandoShop.DataAccess"
+          factory-method="GetCategoryProviderAwareDAO" factory-object="daoFactory"/>
+
+  <object name="categoryProductAwareDAO"
+          type="ArmandoShop.DataAccess.IProductAwareDAO&lt;ArmandoShop.Model.Category>,
+          ArmandoShop.DataAccess"
+          factory-method="GetCategoryProductAwareDAO" factory-object="daoFactory"/>
+
+  <!-- Factory for all DAOs -->
+
+  <object name="daoFactory"
+          type="ArmandoShop.DataAccess.DataAccessFactory, ArmandoShop.DataAccess" />
+
+</objects>

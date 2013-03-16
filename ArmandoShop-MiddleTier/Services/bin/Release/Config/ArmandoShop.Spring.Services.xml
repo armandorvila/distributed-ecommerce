@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <!-- Service Spring objects declaratioins-->
+  
+  <object name="TcpArmandoShopService" 
+          type="ArmandoShop.Services.TcpArmandoShopService, ArmandoShop.Services" 
+          parent="ArmandoShopService"/>
+
+  <object name="HttpArmandoShopService"  parent="ArmandoShopService"
+          type="ArmandoShop.Services.HttpArmandoShopService, ArmandoShop.Services"/>
+  
+  <object name="ArmandoShopService"  abstract="true" type="ArmandoShop.Services.ArmandoShopService, ArmandoShop.Services">
+    <property name="productsFacade" ref="productsFacade"/>
+    <property name="providersFacade" ref="providersFacade"/>
+    <property name="categoriesFacade" ref="categoriesFacade"/>
+    <property name="ordersFacade" ref="ordersFacade"/>
+    <property name="customersFacade" ref="customersFacade"/>
+    <property name="usersFacade" ref="usersFacade"/>
+    <property name="contractsFacade" ref="contractsFacade"/>
+ 
+  </object>
+  
+ 
+</objects>

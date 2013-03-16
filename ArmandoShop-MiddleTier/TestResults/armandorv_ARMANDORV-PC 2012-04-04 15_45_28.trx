@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="df14c3d7-b27a-48fc-afda-795370c1b1c4" name="armandorv@ARMANDORV-PC 2012-04-04 15:45:28" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment userDeploymentRoot="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-04-04 15_45_28">
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Debug\ArmandoShop.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-04T15:45:28.0326311+02:00" queuing="2012-04-04T15:45:28.8426322+02:00" start="2012-04-04T15:45:28.9326323+02:00" finish="2012-04-04T15:45:35.7396500+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="FindAllTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="45fb7b17-50c5-f059-47d8-29fc42af25fa">
+      <Execution id="f45e14c6-afde-4841-9d52-8c36bf0b48e2" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.CustomerDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FindAllTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="45fb7b17-50c5-f059-47d8-29fc42af25fa" executionId="f45e14c6-afde-4841-9d52-8c36bf0b48e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f45e14c6-afde-4841-9d52-8c36bf0b48e2" testId="45fb7b17-50c5-f059-47d8-29fc42af25fa" testName="FindAllTest" computerName="ARMANDORV-PC" duration="00:00:06.0541979" startTime="2012-04-04T15:45:29.0126324+02:00" endTime="2012-04-04T15:45:35.6096499+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f45e14c6-afde-4841-9d52-8c36bf0b48e2">
+      <Output>
+        <StdOut>Al customers are:
+
+Product [Id=1 ,Name=prueba ,surname=prueba ,Address=prueba ,Phone =prueba]</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

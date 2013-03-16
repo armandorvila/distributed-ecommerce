@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+
+  <!-- Facades -->
+  <object name="productsFacade"  type="ArmandoShop.Business.Products.ProductsFacadeImpl, 
+          ArmandoShop.Business">
+    <property name="supplier" ref="productSupplier"/>
+    <property name="manager" ref="productManger"/>
+  </object>
+
+  <object name="providersFacade"  type="ArmandoShop.Business.Providers.ProvidersFacadeImpl, 
+          ArmandoShop.Business">
+    <property name="supplier" ref="providersSupplier"/>
+    <property name="manager" ref="providersManager"/>
+  </object>
+
+  <object name="categoriesFacade"
+          type="ArmandoShop.Business.Categories.CategoriesFacadeImpl, 
+          ArmandoShop.Business">
+    <property name="categoriesSupplier" ref="categoriesSupplier"/>
+    <property name="categoriesManager" ref="categoriesManager"/>
+  </object>
+
+  <object name="ordersFacade"
+          type="ArmandoShop.Business.Orders.OrdersFacadeImpl, ArmandoShop.Business">
+    <property name="supplier" ref="ordersSupplier"/>
+    <property name="manager" ref="ordersManager"/>
+  </object>
+
+  <object name="contractsFacade"  type="ArmandoShop.Business.Contracts.ContractsFacadeImpl, 
+          ArmandoShop.Business">
+    <property name="contractDAO" ref="contractDAO"/>
+  </object>
+
+  <object name="usersFacade"
+          type="ArmandoShop.Business.Users.UsersFacadeImpl, ArmandoShop.Business">
+    <property name="userDAO" ref="userDAO"/>
+  </object>
+
+  <object name="customersFacade"
+        type="ArmandoShop.Business.Customers.CustomersFacadeImpl, ArmandoShop.Business">
+    <property name="customerDAO" ref="customerDAO"/>
+    <property name="customerUserAwareDAO" ref="customerUserAwareDAO"/>
+  </object>
+
+
+  <!-- Internal Business objects -->
+
+  <!-- Products  -->
+  <object name="productSupplier"
+          type="ArmandoShop.Business.Products.ProductsSupplier, ArmandoShop.Business">
+    <property name="productDAO" ref="productDAO" />
+    <property name="categoryProductAwareDAO" ref="categoryProductAwareDAO" />
+  </object>
+
+  <object name="productManger"
+          type="ArmandoShop.Business.Products.ProductsManager, ArmandoShop.Business" >
+    <property name="productDAO" ref="productDAO" />
+  </object>
+
+  <!-- Providers  -->
+  <object name="providersSupplier"
+          type="ArmandoShop.Business.Providers.ProvidersSupplier, ArmandoShop.Business">
+    <property name="providerDAO" ref="providerDAO" />
+    <property name="categoryDAO" ref="categoryProviderAwareDAO"/>
+    <property name="providerUserAwareDAO" ref="providerUserAwareDAO" />
+  </object>
+
+  <object name="providersManager"
+        type="ArmandoShop.Business.Providers.ProvidersManager, ArmandoShop.Business">
+    <property name="providerDAO" ref="providerDAO" />
+  </object>
+
+  <!-- Categorioties  -->
+  <object name="categoriesSupplier"
+        type="ArmandoShop.Business.Categories.CategoriesSupplier, ArmandoShop.Business">
+    <property name="categoryDAO" ref="categoryDAO" />
+    <property name="providerDAO" ref="providerCategoryAwareDAO" />
+  </object>
+
+  <object name="categoriesManager"
+        type="ArmandoShop.Business.Categories.CategoriesManager, ArmandoShop.Business">
+    <property name="categoryDAO" ref="categoryDAO" />
+    <property name="providerDAO" ref="providerCategoryAwareDAO" />
+  </object>
+
+  <!-- Orders  -->
+  <object name="ordersSupplier"
+        type="ArmandoShop.Business.Orders.OrdersSupplier, ArmandoShop.Business">
+    <property name="orderDAO" ref="orderProductAwareDAO" />
+  </object>
+
+  <object name="ordersManager"
+        type="ArmandoShop.Business.Orders.OrdersManager, ArmandoShop.Business">
+    <property name="orderDAO" ref="orderProductAwareDAO" />
+  </object>
+
+  <!-- Customers-->
+
+  <!-- Users -->
+
+</objects>

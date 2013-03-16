@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ArmandoShop.ProductsService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ArmandoShop.ProductsService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ArmandoShop.ProductsService/Imports">
+      <xsd:import namespace="http://ArmandoShop.ProductsService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ArmandoShop.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProductsService_GetProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_GetProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_ListProducts_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListProducts" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_ListProducts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListProductsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_GetProductsByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsByCategory" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_GetProductsByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_NewProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewProduct" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_NewProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_ModifyProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProduct" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_ModifyProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_DeleteProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProduct" />
+  </wsdl:message>
+  <wsdl:message name="IProductsService_DeleteProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteProductResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProductsService">
+    <wsdl:operation name="GetProduct">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/GetProduct" message="tns:IProductsService_GetProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/GetProductResponse" message="tns:IProductsService_GetProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListProducts">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/ListProducts" message="tns:IProductsService_ListProducts_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/ListProductsResponse" message="tns:IProductsService_ListProducts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/GetProductsByCategory" message="tns:IProductsService_GetProductsByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/GetProductsByCategoryResponse" message="tns:IProductsService_GetProductsByCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewProduct">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/NewProduct" message="tns:IProductsService_NewProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/NewProductResponse" message="tns:IProductsService_NewProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyProduct">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/ModifyProduct" message="tns:IProductsService_ModifyProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/ModifyProductResponse" message="tns:IProductsService_ModifyProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteProduct">
+      <wsdl:input wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/DeleteProduct" message="tns:IProductsService_DeleteProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.ProductsService/IProductsService/DeleteProductResponse" message="tns:IProductsService_DeleteProduct_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,7 @@
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Release\ArmandoShop.DataAccess.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Release\ArmandoShop.DataAccess.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Release\Model.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Release\Model.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\obj\Release\ResolveAssemblyReference.cache
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\obj\Release\ArmandoShop.DataAccess.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\obj\Release\ArmandoShop.DataAccess.pdb

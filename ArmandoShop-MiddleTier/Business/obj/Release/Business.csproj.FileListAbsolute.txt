@@ -1,0 +1,16 @@
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\ArmandoShop.Business.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\ArmandoShop.Business.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\ArmandoShop.DataAccess.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Common.Logging.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Model.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Spring.Core.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Spring.Services.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\ArmandoShop.DataAccess.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Model.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Spring.Core.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Spring.Core.xml
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Spring.Services.pdb
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\bin\Release\Spring.Services.xml
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\obj\Release\ResolveAssemblyReference.cache
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\obj\Release\ArmandoShop.Business.dll
+D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Business\obj\Release\ArmandoShop.Business.pdb

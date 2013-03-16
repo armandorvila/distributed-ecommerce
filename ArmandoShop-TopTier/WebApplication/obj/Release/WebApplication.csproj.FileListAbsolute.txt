@@ -1,0 +1,5 @@
+C:\Users\armandorv\Desktop\TLECE_ArmandoRamírez\Armando Shop Development\ArmandoShop-TopTier\WebApplication\bin\ArmandoShop.WebApplication.dll
+C:\Users\armandorv\Desktop\TLECE_ArmandoRamírez\Armando Shop Development\ArmandoShop-TopTier\WebApplication\bin\ArmandoShop.WebApplication.pdb
+C:\Users\armandorv\Desktop\TLECE_ArmandoRamírez\Armando Shop Development\ArmandoShop-TopTier\WebApplication\obj\Release\ResolveAssemblyReference.cache
+C:\Users\armandorv\Desktop\TLECE_ArmandoRamírez\Armando Shop Development\ArmandoShop-TopTier\WebApplication\obj\Release\ArmandoShop.WebApplication.dll
+C:\Users\armandorv\Desktop\TLECE_ArmandoRamírez\Armando Shop Development\ArmandoShop-TopTier\WebApplication\obj\Release\ArmandoShop.WebApplication.pdb

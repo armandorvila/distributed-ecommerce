@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ArmandoShop.categoryService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ArmandoShop.categoryService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ArmandoShop.categoryService/Imports">
+      <xsd:import namespace="http://ArmandoShop.categoryService" />
+      <xsd:import namespace="http://ArmandoShop.ProductsService" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ArmandoShop.Model" />
+      <xsd:import namespace="http://ArmandoShop.CustomersService" />
+      <xsd:import namespace="http://ArmandoShop.ProvidersService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICategoryService_ListCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListCategories" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_ListCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_GetCategoriesByProvider_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesByProvider" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_GetCategoriesByProvider_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesByProviderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_GetCategoriesNotInProvider_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesNotInProvider" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_GetCategoriesNotInProvider_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesNotInProviderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_AddProviderToCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddProviderToCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_AddProviderToCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddProviderToCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_RemoveProviderOfCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveProviderOfCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_RemoveProviderOfCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveProviderOfCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_GetCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_GetCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_NewCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_NewCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_DeleteCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_DeleteCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_ModifyCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCategory" />
+  </wsdl:message>
+  <wsdl:message name="ICategoryService_ModifyCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCategoryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICategoryService">
+    <wsdl:operation name="ListCategories">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/ListCategories" message="tns:ICategoryService_ListCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/ListCategoriesResponse" message="tns:ICategoryService_ListCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoriesByProvider">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/GetCategoriesByProvider" message="tns:ICategoryService_GetCategoriesByProvider_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/GetCategoriesByProviderResponse" message="tns:ICategoryService_GetCategoriesByProvider_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoriesNotInProvider">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/GetCategoriesNotInProvider" message="tns:ICategoryService_GetCategoriesNotInProvider_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/GetCategoriesNotInProviderResponse" message="tns:ICategoryService_GetCategoriesNotInProvider_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddProviderToCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/AddProviderToCategory" message="tns:ICategoryService_AddProviderToCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/AddProviderToCategoryResponse" message="tns:ICategoryService_AddProviderToCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveProviderOfCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/RemoveProviderOfCategory" message="tns:ICategoryService_RemoveProviderOfCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/RemoveProviderOfCategoryResponse" message="tns:ICategoryService_RemoveProviderOfCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/GetCategory" message="tns:ICategoryService_GetCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/GetCategoryResponse" message="tns:ICategoryService_GetCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/NewCategory" message="tns:ICategoryService_NewCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/NewCategoryResponse" message="tns:ICategoryService_NewCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/DeleteCategory" message="tns:ICategoryService_DeleteCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/DeleteCategoryResponse" message="tns:ICategoryService_DeleteCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyCategory">
+      <wsdl:input wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/ModifyCategory" message="tns:ICategoryService_ModifyCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://ArmandoShop.categoryService/ICategoryService/ModifyCategoryResponse" message="tns:ICategoryService_ModifyCategory_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

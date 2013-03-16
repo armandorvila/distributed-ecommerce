@@ -1,0 +1,105 @@
+﻿<Window x:Class="ArmandoShop.ManagementClient.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ArmandoShop.ManagementClient.View"
+        Title="ArmandoShop Management" Height="570" Width="856" WindowStyle="ToolWindow" 
+        WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" FontWeight="Bold">
+    
+    <DockPanel Height="534" Name="dockPanel1" Width="829">
+        <Grid Height="91" Name="headerGrid" Width="823" DockPanel.Dock="Top" Visibility="Visible" UseLayoutRounding="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="52*" />
+                <RowDefinition Height="39*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="86*" />
+                <ColumnDefinition Width="515*" />
+            </Grid.ColumnDefinitions>
+            <Image Height="74" HorizontalAlignment="Left" 
+                   Margin="16,6,0,0" Name="logo" Stretch="Fill" VerticalAlignment="Top" Width="95" 
+                   Source="/ArmandoShop.ManagementClient;component/Images/armandorv.jpg" 
+                   Grid.ColumnSpan="2" Grid.RowSpan="2" />
+            <Label Content="Armando Shop Managment" Height="50" 
+                   HorizontalAlignment="Left" Margin="113,16,0,0" Name="label1" VerticalAlignment="Top" 
+                   Width="331" FontSize="24" FontWeight="Bold" FontStyle="Italic" Grid.Column="1" Grid.RowSpan="2" Foreground="White" />
+            <Border BorderBrush="Silver" BorderThickness="1" Height="74" HorizontalAlignment="Left" Margin="16,6,0,0" 
+                    Name="border1" VerticalAlignment="Top" Width="95" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+            <Grid.Background>
+                <ImageBrush ImageSource="/ArmandoShop.ManagementClient;component/Images/header_bg.jpg" />
+            </Grid.Background>
+        </Grid>
+       
+        <Grid Height="381" Name="contentGrid" Width="659" DockPanel.Dock="Right" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="62*" />
+                <RowDefinition Height="328*" />
+            </Grid.RowDefinitions>
+            <Border BorderBrush="Silver" BorderThickness="1" Name="border4" 
+                    Margin="6" Background="White" Grid.RowSpan="2">
+
+                <TabControl Height="365" Width="643" Name="tabbedPanel"  >
+                    <TabControl.Background>
+                        <ImageBrush />
+                    </TabControl.Background>
+                    <TabItem Header="Statics" Name="Statics">
+                        <local:StaticsSection DataContext="{Binding StaticsViewModel}"/>
+                    </TabItem>
+                    <TabItem Name="Products" Header="Products">
+                        <local:ProductsSection DataContext="{Binding ProductsViewModel}"/>
+                    </TabItem>
+                    <TabItem Name="Categories" Header="Categories">
+                        <local:CategoriesSection DataContext="{Binding CategoriesViewModel}" />
+                    </TabItem>                  
+                    <TabItem Name="Providers" Header="Providers">
+                        <local:ProvidersSection DataContext="{Binding ProvidersViewModel}"/>
+                    </TabItem>
+                    <TabItem Name="Customers" Header="Customers" DataContext="{Binding CustomersViewModel}">
+                        <local:CustomersSection/>
+                    </TabItem>
+                    <TabItem Name="Transactions" Header="Transactions">
+                        <local:TransactionsSection  DataContext="{Binding TransactionsViewModel}"/>
+                    </TabItem>
+                </TabControl>
+           
+            </Border>
+           
+        </Grid>
+     
+        <Grid Height="381" Name="buttonsGrid" Width="161" DockPanel.Dock="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="371*" />
+            </Grid.RowDefinitions>
+            <Border BorderBrush="Silver" BorderThickness="1" Height="322" 
+                    HorizontalAlignment="Left" Margin="9,43,0,0" Name="border2" 
+                    VerticalAlignment="Top" Width="146" Grid.Row="1">
+               
+                <WrapPanel Height="193" Name="wrapPanel1" Width="115" >
+                    <Button Content="Statics" Height="32" Name="staticsButton"  
+                            Width="115" ClickMode="Press" Cursor="Hand" Command="{Binding GoToStaticsCommand}"/>
+                    <Button Content="Products" Height="32" Name="productsButton" 
+                            Width="115" ClickMode="Press" Cursor="Hand"  Command="{Binding GoToProductsCommand}"/>
+                    <Button Content="Categories" Height="32" Name="categoriesButton" 
+                            Width="115" ClickMode="Press" Cursor="Hand"  Command="{Binding GoToCategoriesCommand}"/>                   
+                    <Button Content="Providers" Height="32" Name="providersButton" Width="115" 
+                            ClickMode="Press" Cursor="Hand"  Command="{Binding GoToProvidersCommand}"/>
+                    <Button Content="Customers" Height="32" Name="customersButton" Width="115" 
+                            ClickMode="Press" Cursor="Hand"  Command="{Binding GoToCustomersCommand}"/>
+                    <Button Content="Transactions" Height="32" Name="transactionsButton" Width="115" 
+                            ClickMode="Press" Cursor="Hand"  Command="{Binding GoToTransactionsCommand}"/>
+                </WrapPanel>
+                <Border.Background>
+                    <ImageBrush ImageSource="/ArmandoShop.ManagementClient;component/Images/header_bg.jpg" />
+                </Border.Background>
+            </Border>
+            <Border BorderBrush="Silver" BorderThickness="1" Height="36" 
+                    HorizontalAlignment="Left" Margin="9,0,0,335" Name="border3" 
+                    VerticalAlignment="Bottom" Width="146" Grid.Row="1">
+                <Border.Background>
+                    <ImageBrush ImageSource="/ArmandoShop.ManagementClient;component/Images/header_bg.jpg" />
+                </Border.Background>
+            </Border>
+            <Label Content="Shop Sections" Height="28" Name="label2" Width="134" FontSize="16" FontWeight="Bold" FontStyle="Italic" Foreground="White" Margin="12,0,16,343" Grid.Row="1" />
+        </Grid>
+    </DockPanel>
+</Window>

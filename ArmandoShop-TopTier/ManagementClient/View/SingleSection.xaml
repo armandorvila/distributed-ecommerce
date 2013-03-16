@@ -1,0 +1,8 @@
+﻿<Window x:Class="ArmandoShop.ManagementClient.View.SingleSection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ArmandoShop.ManagementClient.View"
+        Title="Armando Shop Managment" Height="432" Width="514" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" FontWeight="Bold" FontStyle="Normal">
+    <!-- This Window will be created progrmatically 
+    and their content will be add progrmatically too-->
+</Window>

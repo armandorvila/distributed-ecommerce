@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7a841804-681c-4d81-bc99-8da451c8dec3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:4502/TcpArmandoShopService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ArmandoShop.ProductsService.wsdl" MetadataType="Wsdl" ID="9a26326c-a12c-44cc-b902-350dcd1ff69d" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="95e75a86-35d7-410d-8183-9966bd412d38" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.CustomersService.wsdl" MetadataType="Wsdl" ID="4c471fbe-d041-4625-bc31-d84a90941a3a" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.ProvidersService.wsdl" MetadataType="Wsdl" ID="e82ea553-9bd9-4235-be6e-5080ed6a9789" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.categoryService.wsdl" MetadataType="Wsdl" ID="17b1defb-ac81-422c-8f61-b555b928f5a5" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.OrdersService.wsdl" MetadataType="Wsdl" ID="5fc36979-d29f-494f-a91a-eae373ab13d5" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.ContractsService.wsdl" MetadataType="Wsdl" ID="85113f29-1cdd-47a5-a0dd-0adca69a02ef" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.UsersService.wsdl" MetadataType="Wsdl" ID="558656eb-6c15-4244-b0f5-d0b150c50b66" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.ProductsService.xsd" MetadataType="Schema" ID="202d2223-29a2-4ac4-809a-12afa09808b7" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="3ad23ed1-5423-4a30-8cb3-29ed2cc39cbc" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.Model.xsd" MetadataType="Schema" ID="84b43ac0-77ab-443d-882c-ac2e43e8f087" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.CustomersService.xsd" MetadataType="Schema" ID="3c9f87b3-b2b3-4e11-aba5-cda8e712bb1c" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.ProvidersService.xsd" MetadataType="Schema" ID="7409eb69-8f0b-474b-9111-54086b2d9eb9" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.categoryService.xsd" MetadataType="Schema" ID="a8193c04-d125-4d34-9603-d9598941f714" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.OrdersService.xsd" MetadataType="Schema" ID="dbe24d90-6a20-4fcd-a5a1-be665db815da" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="6b73e3fe-de14-4706-9ea8-aa417f27f122" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.ContractsService.xsd" MetadataType="Schema" ID="a158ab33-729f-49de-a05c-dad192a79a45" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+    <MetadataFile FileName="ArmandoShop.UsersService.xsd" MetadataType="Schema" ID="f5f0b2a6-0c19-49f5-aee9-604c8cb9f5e6" SourceId="1" SourceUrl="net.tcp://localhost:4502/TcpArmandoShopService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

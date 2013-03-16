@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9cf9a954-5ced-490e-a1b1-bfa2acff5612" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/HtppArmandoShopService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HtppArmandoShopService.wsdl" MetadataType="Wsdl" ID="741d39dd-c97a-4ffd-8fc6-6d45550756e1" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl1" />
+    <MetadataFile FileName="HtppArmandoShopService.xsd" MetadataType="Schema" ID="7976be56-07fd-4667-a4cb-9db82b42a2bd" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd2" />
+    <MetadataFile FileName="HtppArmandoShopService1.xsd" MetadataType="Schema" ID="9a44a30b-ac21-47e7-9cf3-b34fbd71dbc5" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd3" />
+    <MetadataFile FileName="HtppArmandoShopService2.xsd" MetadataType="Schema" ID="4b6c4521-4fe9-4db7-bed2-e8b1e3c53c33" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd0" />
+    <MetadataFile FileName="HtppArmandoShopService3.xsd" MetadataType="Schema" ID="fdedf72d-74dc-4e9c-a459-8b95177440f7" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd1" />
+    <MetadataFile FileName="HtppArmandoShopService4.xsd" MetadataType="Schema" ID="e49912c1-99a9-485a-ab05-f43e620138ee" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd6" />
+    <MetadataFile FileName="HttpArmandoShopService.wsdl" MetadataType="Wsdl" ID="e0dda9a0-1f39-4664-be88-dc67417073d2" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl" />
+    <MetadataFile FileName="HtppArmandoShopService5.xsd" MetadataType="Schema" ID="9935c041-8932-45ac-bfee-2d989b1a6ff3" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd4" />
+    <MetadataFile FileName="HtppArmandoShopService6.xsd" MetadataType="Schema" ID="0749e032-c775-4574-99f9-485a50aae0fb" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd5" />
+    <MetadataFile FileName="HtppArmandoShopService1.wsdl" MetadataType="Wsdl" ID="01acef8e-abd4-4b67-b8d7-756f81fec16a" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl2" />
+    <MetadataFile FileName="HtppArmandoShopService2.wsdl" MetadataType="Wsdl" ID="82240c58-c8dc-4fa9-8e38-dbdf0836cb2c" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl4" />
+    <MetadataFile FileName="HtppArmandoShopService3.wsdl" MetadataType="Wsdl" ID="614fc8ef-5484-466a-959c-7e2c9722ad36" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl0" />
+    <MetadataFile FileName="HtppArmandoShopService.disco" MetadataType="Disco" ID="74c59581-2d09-4353-ac4d-4e024b4c470e" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?disco" />
+    <MetadataFile FileName="HtppArmandoShopService4.wsdl" MetadataType="Wsdl" ID="62dc8130-9807-4d4f-93cc-a2b629881bcf" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl3" />
+    <MetadataFile FileName="HtppArmandoShopService6.wsdl" MetadataType="Wsdl" ID="ca1e8663-6bac-48e8-9daf-ac99393bd308" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl6" />
+    <MetadataFile FileName="HtppArmandoShopService7.xsd" MetadataType="Schema" ID="bafdbfd8-6d67-424e-877f-185a0ce8832b" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd7" />
+    <MetadataFile FileName="HtppArmandoShopService5.wsdl" MetadataType="Wsdl" ID="a5a25100-6f19-49c5-b63d-5a45c3b64729" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?wsdl=wsdl5" />
+    <MetadataFile FileName="HtppArmandoShopService8.xsd" MetadataType="Schema" ID="93846e9b-907b-4861-841d-e22f17de49f1" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd8" />
+    <MetadataFile FileName="HtppArmandoShopService9.xsd" MetadataType="Schema" ID="d6bc9fb3-710c-4e74-9249-8c3edebfb7ac" SourceId="1" SourceUrl="http://localhost:8080/HtppArmandoShopService?xsd=xsd9" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

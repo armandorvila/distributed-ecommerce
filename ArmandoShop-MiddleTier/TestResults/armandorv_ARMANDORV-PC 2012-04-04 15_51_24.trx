@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d7b4a6b5-f369-4847-b712-099eb7c1bcfb" name="armandorv@ARMANDORV-PC 2012-04-04 15:51:24" runUser="armandorv-pc\armandorv" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="f68d14ca-8efd-4961-820a-96dc17a2a53d">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="armandorv_ARMANDORV-PC 2012-04-04 15_51_24">
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\Model\bin\Debug\Model.dll" />
+      <DeploymentItem filename="D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\bin\Debug\ArmandoShop.DataAccess.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-04T15:51:24.6396233+02:00" queuing="2012-04-04T15:51:24.6696234+02:00" start="2012-04-04T15:51:24.6896234+02:00" finish="2012-04-04T15:51:25.0396239+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="2" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetCategoritiesByElementTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="b0434fe2-cd46-678b-72da-886d4716fad9">
+      <Execution id="29a5ac4a-ecc7-4383-b65a-5719b85c680a" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCategoritiesByElementTest" />
+    </UnitTest>
+    <UnitTest name="UpdateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="ed63af31-f63f-29ce-afd8-efeefcefa207">
+      <Execution id="13270dc1-2f51-4d34-9421-696479866525" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpdateTest" />
+    </UnitTest>
+    <UnitTest name="TestFindAllproviders" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="fc90bb23-52db-513a-b706-b7916bd78bdc">
+      <Execution id="bf305a74-c98a-47e0-b646-664b1c2bc94c" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindAllproviders" />
+    </UnitTest>
+    <UnitTest name="CreateTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="3125de1b-d30a-bcfe-c8bd-930b8be98f38">
+      <Execution id="bc532d41-2096-4348-a500-d8a373733a92" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTest" />
+    </UnitTest>
+    <UnitTest name="TestFindById" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="70181647-20c2-eead-a83d-071571dd77b1">
+      <Execution id="80858d09-35d5-4ac8-9507-c94717543721" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFindById" />
+    </UnitTest>
+    <UnitTest name="DeleteTest" storage="d:\work\vs10_workspace\projects\armandoshop-middletier\dataaccess.tests\bin\debug\armandoshop.dataaccess.tests.dll" id="a0e5cdf1-c7c2-caac-d080-ee895872f784">
+      <Execution id="8e94329f-9507-4db4-b287-77ed8f1d0b6e" />
+      <TestMethod codeBase="D:/Work/VS10_WorkSpace/Projects/ArmandoShop-MiddleTier/DataAccess.Tests/bin/Debug/ArmandoShop.DataAccess.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ArmandoShop.DataAccess.Tests.ProviderDAOTest, ArmandoShop.DataAccess.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeleteTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3125de1b-d30a-bcfe-c8bd-930b8be98f38" executionId="bc532d41-2096-4348-a500-d8a373733a92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="70181647-20c2-eead-a83d-071571dd77b1" executionId="80858d09-35d5-4ac8-9507-c94717543721" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a0e5cdf1-c7c2-caac-d080-ee895872f784" executionId="8e94329f-9507-4db4-b287-77ed8f1d0b6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0434fe2-cd46-678b-72da-886d4716fad9" executionId="29a5ac4a-ecc7-4383-b65a-5719b85c680a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ed63af31-f63f-29ce-afd8-efeefcefa207" executionId="13270dc1-2f51-4d34-9421-696479866525" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc90bb23-52db-513a-b706-b7916bd78bdc" executionId="bf305a74-c98a-47e0-b646-664b1c2bc94c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bc532d41-2096-4348-a500-d8a373733a92" testId="3125de1b-d30a-bcfe-c8bd-930b8be98f38" testName="CreateTest" computerName="ARMANDORV-PC" duration="00:00:00.0454079" startTime="2012-04-04T15:51:24.6896234+02:00" endTime="2012-04-04T15:51:24.9396238+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc532d41-2096-4348-a500-d8a373733a92">
+      <Output>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.ProviderDAOTest.CreateTest produjo la excepción: 
+System.Data.SqlServerCe.SqlCeException: Error al analizar la consulta. [ Token line number = 1,Token line offset = 137,Token in error = p ]</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.GenericQuery(DbCommand cmd, DbConnection con, IRowMapper`1 mapper, String sql) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 67
+   en ArmandoShop.DataAccess.Util.QueryExecutor`1.query(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 26
+   en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 42
+   en ArmandoShop.DataAccess.Core.ProviderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\ProviderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.ProviderDAOTest.CreateTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\ProviderDAOTest.cs:línea 44
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="80858d09-35d5-4ac8-9507-c94717543721" testId="70181647-20c2-eead-a83d-071571dd77b1" testName="TestFindById" computerName="ARMANDORV-PC" duration="00:00:00.0066267" startTime="2012-04-04T15:51:24.9396238+02:00" endTime="2012-04-04T15:51:24.9496238+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80858d09-35d5-4ac8-9507-c94717543721">
+      <Output>
+        <StdOut>Testing Getting Provider By Id: 1</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.ProviderDAOTest.TestFindById produjo la excepción: 
+System.Data.SqlServerCe.SqlCeException: Error al analizar la consulta. [ Token line number = 1,Token line offset = 137,Token in error = p ]</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.GenericQuery(DbCommand cmd, DbConnection con, IRowMapper`1 mapper, String sql) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 67
+   en ArmandoShop.DataAccess.Util.QueryExecutor`1.query(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 26
+   en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 42
+   en ArmandoShop.DataAccess.Core.ProviderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\ProviderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.ProviderDAOTest.TestFindById() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\ProviderDAOTest.cs:línea 26
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8e94329f-9507-4db4-b287-77ed8f1d0b6e" testId="a0e5cdf1-c7c2-caac-d080-ee895872f784" testName="DeleteTest" computerName="ARMANDORV-PC" duration="00:00:00.0207051" startTime="2012-04-04T15:51:24.9496238+02:00" endTime="2012-04-04T15:51:24.9796238+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e94329f-9507-4db4-b287-77ed8f1d0b6e">
+      <Output>
+        <StdOut>Testing Delete Provider : 
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = prueba ,Mail = prueba]
+Deleting Last Providern</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.ProviderDAOTest.DeleteTest produjo la excepción: 
+System.Data.SqlServerCe.SqlCeException: No se puede eliminar el valor de la clave principal porque aún existen referencias a esta clave. [ Foreign key constraint name = provider ]</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.UpdateExecutor.Update(String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\UpdateExecutor.cs:línea 62
+   en ArmandoShop.DataAccess.Core.ProviderDAO.Remove(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\ProviderDAO.cs:línea 41
+   en ArmandoShop.DataAccess.Tests.ProviderDAOTest.DeleteTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\ProviderDAOTest.cs:línea 71
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="29a5ac4a-ecc7-4383-b65a-5719b85c680a" testId="b0434fe2-cd46-678b-72da-886d4716fad9" testName="GetCategoritiesByElementTest" computerName="ARMANDORV-PC" duration="00:00:00.0063277" startTime="2012-04-04T15:51:24.9796238+02:00" endTime="2012-04-04T15:51:24.9896238+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29a5ac4a-ecc7-4383-b65a-5719b85c680a">
+      <Output>
+        <StdOut>Testing GetCategoritiesByElementTest :</StdOut>
+        <ErrorInfo>
+          <Message>El método de prueba ArmandoShop.DataAccess.Tests.ProviderDAOTest.GetCategoritiesByElementTest produjo la excepción: 
+System.Data.SqlServerCe.SqlCeException: Error al analizar la consulta. [ Token line number = 1,Token line offset = 137,Token in error = p ]</Message>
+          <StackTrace>    en ArmandoShop.DataAccess.Util.QueryExecutor`1.GenericQuery(DbCommand cmd, DbConnection con, IRowMapper`1 mapper, String sql) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 67
+   en ArmandoShop.DataAccess.Util.QueryExecutor`1.query(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 26
+   en ArmandoShop.DataAccess.Util.QueryExecutor`1.queryForObject(IRowMapper`1 mapper, String sql, IDictionary`2 parms) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Util\QueryExecutor.cs:línea 42
+   en ArmandoShop.DataAccess.Core.ProviderDAO.FindById(Int64 id) en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess\Core\ProviderDAO.cs:línea 20
+   en ArmandoShop.DataAccess.Tests.ProviderDAOTest.GetCategoritiesByElementTest() en D:\Work\VS10_WorkSpace\Projects\ArmandoShop-MiddleTier\DataAccess.Tests\ProviderDAOTest.cs:línea 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="13270dc1-2f51-4d34-9421-696479866525" testId="ed63af31-f63f-29ce-afd8-efeefcefa207" testName="UpdateTest" computerName="ARMANDORV-PC" duration="00:00:00.0232186" startTime="2012-04-04T15:51:24.9896238+02:00" endTime="2012-04-04T15:51:25.0196239+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13270dc1-2f51-4d34-9421-696479866525">
+      <Output>
+        <StdOut>Testing Update Provider : 
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = prueba ,Mail = prueba]
+Updating Last Provider
+
+Current providers  : 
+
+Provider [ Id = 1 ,Name = name522168 ,Mail = prueba]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf305a74-c98a-47e0-b646-664b1c2bc94c" testId="fc90bb23-52db-513a-b706-b7916bd78bdc" testName="TestFindAllproviders" computerName="ARMANDORV-PC" duration="00:00:00.0053942" startTime="2012-04-04T15:51:25.0196239+02:00" endTime="2012-04-04T15:51:25.0296239+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf305a74-c98a-47e0-b646-664b1c2bc94c">
+      <Output>
+        <StdOut>Testing Getting All providers: 
+
+Provider [ Id = 1 ,Name = name522168 ,Mail = prueba]
+End Test 
+ ______</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
